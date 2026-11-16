@@ -1,0 +1,393 @@
+<!DOCTYPE html><html class="h-full" lang="en" data-qb-installed="true"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#fff8f6;color:#211a18;-webkit-tap-highlight-color:transparent;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:calc(env(safe-area-inset-bottom,0px) + 0.5rem);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}*{-ms-overflow-style:none;scrollbar-width:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary-fixed-dim": "#ffb4a4", "primary-fixed": "#ffdad3", "surface-container-high": "#f3e5e2", "secondary-container": "#d1e5cb", "error": "#ba1a1a", "on-surface": "#211a18", "on-background": "#211a18", "surface-tint": "#9c432f", "secondary": "#51634e", "tertiary-fixed-dim": "#f0bd8b", "on-surface-variant": "#56423e", "secondary-fixed-dim": "#b8ccb3", "on-primary-fixed-variant": "#7d2c1a", "background": "#fff8f6", "inverse-primary": "#ffb4a4", "surface-container-low": "#fff1ed", "primary-container": "#b2533e", "surface": "#fff8f6", "on-primary-container": "#fff1ee", "on-error": "#ffffff", "on-tertiary-fixed": "#2c1600", "on-tertiary-fixed-variant": "#623f18", "error-container": "#ffdad6", "on-error-container": "#93000a", "on-tertiary": "#ffffff", "surface-container-highest": "#ede0dc", "tertiary-container": "#91673c", "tertiary": "#754f27", "on-secondary": "#ffffff", "on-primary": "#ffffff", "surface-variant": "#ede0dc", "surface-container-lowest": "#ffffff", "surface-container": "#f9ebe7", "outline": "#89726d", "secondary-fixed": "#d4e8ce", "primary": "#933c29", "on-secondary-fixed": "#0f1f0f", "outline-variant": "#dcc1bb", "surface-dim": "#e4d7d4", "tertiary-fixed": "#ffdcbd", "on-primary-fixed": "#3d0600", "on-secondary-container": "#556752", "on-tertiary-container": "#fff2e9", "inverse-on-surface": "#fceeea", "inverse-surface": "#362f2d", "on-secondary-fixed-variant": "#3a4b38", "surface-bright": "#fff8f6" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xl": "2.25rem", "gutter": "1rem", "margin": "1.25rem", "gutter-compact": "0.75rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-md": "1rem", "margin-expanded": "1.5rem" }, fontFamily: { "title-md": ["Newsreader"], "headline-sm": ["Newsreader"], "headline-lg": ["Newsreader"], "body-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-md": ["Newsreader"], "display-lg-mobile": ["Newsreader"], "body-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "display-lg": ["Newsreader"] }, fontSize: { "title-md": ["16px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "500" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-lg": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "label-sm": ["10px", { "lineHeight": "12px", "letterSpacing": "0.06em", "fontWeight": "700" }], "label-lg": ["13px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-md": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "display-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "500" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style></style></head><body class="min-h-full bg-surface text-on-surface flex flex-col font-body-md text-body-md antialiased selection:bg-primary-fixed selection:text-on-primary-fixed" data-new-gr-c-s-check-loaded="14.1347.0" data-gr-ext-installed="" data-new-gr-c-s-loaded="14.1347.0"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Hekaya App Icon" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDdlsVk8q8gtmTsxqxp8md2PoVKaVJmuoJe-F1h0xVpIAihmQkmchfJm_qxZ8SdZ-5PpgOiS7XjZt_4la__CsHkPmR3ddKHlpxlE7BHsnWjo3D2nQYT9UvmarxTJ-rzxbYN-9X0ouPo2nNAh0WKRBizwsyvmrFbTpAhcAXFoNocPUi29b-l-tNknjkmd7iRu2JUapu6T72gnkQi34GvkSamBvrF13lEKJEAvfJdwRx_sw"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">Hekaya</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider leading-none mt-1">Home</span></div></div><div class="flex items-center gap-space-xs"><button class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span></button><a class="w-11 h-11 flex items-center justify-center p-0.5 rounded-full transition-transform active:scale-95" data-path="profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfZqFH8SPCOFTMH2JW6t1llPI-eYKBWT0oAGFp35aVMM37kmzfNuPrl9v8EoZtpyj51a_kc9XGsspddjDd5y66Up-Ee2Zkmv4NaoqlC2NwKChVH9z7U5cIiFoOF0KeY4682pkzClTu3GoNPsf8BSp0xO0lvmQcig72yyVQ2uvB59ywLhEzTihrepj5CZWsNZQQVqgeYb00_Rz0uHoif8S2m-1i_MH5U_riS8a8uOLp"></a></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-28 bg-surface px-margin"><div class="flex flex-col w-full pb-6 space-y-6">
+<!-- Top Greeting & Context -->
+<section class="flex flex-col pt-1">
+<div class="flex items-baseline justify-between">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Discover Sanctuary</h1>
+<span class="font-label-sm text-label-sm text-tertiary bg-tertiary-fixed/40 px-2 py-0.5 rounded-full uppercase tracking-wider">Circle 04</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+      Browse 142 curated volumes shared by your circle
+    </p>
+</section>
+<!-- Search & Filter Controls -->
+<section class="flex flex-col gap-3">
+<!-- Search Bar with Filter Action -->
+<div class="flex items-center gap-2">
+<div class="relative flex-1 flex items-center bg-surface-container-low rounded-full px-3.5 h-12 shadow-sm">
+<span class="material-symbols-outlined text-outline text-[20px] select-none mr-2">search</span>
+<input class="w-full bg-transparent text-on-surface placeholder:text-outline font-body-md text-body-md outline-none border-none p-0 focus:ring-0" placeholder="Search title, author, or owner..." type="text">
+<button aria-label="Clear Search" class="text-outline hover:text-on-surface p-1 rounded-full flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-[18px]">mic</span>
+</button>
+</div>
+<button aria-label="Filter options" class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-primary active:scale-95 transition-all shadow-sm flex-shrink-0" id="filterToggleBtn" type="button">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+</div>
+<!-- Availability Segmented Toggle -->
+<div class="flex items-center justify-between bg-surface-container-low p-1 rounded-full w-full">
+<button class="flex-1 py-1.5 px-3 rounded-full font-label-md text-label-md transition-all flex items-center justify-center gap-1.5 bg-surface text-primary shadow-sm" id="toggleAvailBtn" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Available Now (118)</span>
+</button>
+<button class="flex-1 py-1.5 px-3 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all flex items-center justify-center gap-1.5" id="toggleAllBtn" type="button">
+<span>All Shared Books (142)</span>
+</button>
+</div>
+<!-- Quick Genre Shelf Filters -->
+<div class="flex items-center gap-2 overflow-x-auto py-1 -mx-margin px-margin no-scrollbar">
+<button class="flex-shrink-0 px-3.5 py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-sm transition-transform active:scale-95">
+        All Genres
+      </button>
+<button class="flex-shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-label-md text-label-md transition-all active:scale-95">
+        Philosophy
+      </button>
+<button class="flex-shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-label-md text-label-md transition-all active:scale-95">
+        Fiction
+      </button>
+<button class="flex-shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-label-md text-label-md transition-all active:scale-95">
+        Essays
+      </button>
+<button class="flex-shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-label-md text-label-md transition-all active:scale-95">
+        Poetry
+      </button>
+<button class="flex-shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-label-md text-label-md transition-all active:scale-95">
+        History
+      </button>
+<button class="flex-shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-label-md text-label-md transition-all active:scale-95">
+        Memoir
+      </button>
+</div>
+</section>
+<!-- Featured in Salon Spotlight Card -->
+<section class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">local_cafe</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Featured&nbsp;</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase">Weekly Curated</span>
+</div>
+<!-- Spotlight Tactile Card -->
+<div class="relative bg-surface-container-low rounded-xl p-4 shadow-sm overflow-hidden">
+<div class="absolute -right-10 -bottom-10 w-36 h-36 rounded-full bg-primary-fixed-dim/20 pointer-events-none blur-2xl"></div>
+<div class="flex gap-4">
+<!-- Cover Art Thumbnail with spine nuance -->
+<div class="relative w-24 h-36 flex-shrink-0 rounded bg-surface-container-highest shadow-md overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Vintage hardcover book cover for The Master and Margarita by Mikhail Bulgakov. Rich textured burgundy bookcloth with subtle gold foil embossed cat and mystical lunar silhouettes in an archival literary salon aesthetic, studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWX5h2JQK1XXFXfDnp5ykGfswYJW3GDHp1YMAVLXE5pSTu-JKJ0B9pjjTvwrgc0w048X6haSGRjhoU-Aef4xAw8pA_K6lSgF49JWM2Yf-HfpBWJFWEUsmkJCZ3SN6-x64TN8tLmy-59DWRsZpRzYkecMOTwSsH1ZHBawGD5DgI8HvrSONHGxOm-0RRYuUMRuxOhbkY89PlD8c1O8YKPVxH2jE4QAEymJ_COclV7CHu">
+<div class="absolute inset-y-0 left-0 w-[2px] bg-black/20 pointer-events-none"></div>
+</div>
+<!-- Book Meta & Highlight Quote -->
+<div class="flex flex-col justify-between flex-1 min-w-0">
+<div>
+<div class="flex items-center justify-between gap-1 mb-1">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                AVAILABLE
+              </span>
+<span class="font-label-sm text-label-sm text-tertiary">Classic</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-tight truncate">
+              The Master and Margarita
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic truncate mt-0.5">
+              Mikhail Bulgakov
+            </p>
+<!-- Marginalia / Quote excerpt -->
+<div class="mt-2.5 pl-2.5 py-0.5 border-l-2 border-primary/40 bg-surface/50 rounded-r">
+<p class="font-title-md text-title-md text-on-surface-variant italic text-[13px] leading-tight line-clamp-2">
+                “Manuscripts don’t burn.”
+              </p>
+</div>
+</div>
+<!-- Owner strip & Borrow CTA -->
+<div class="flex items-center justify-between pt-2.5 mt-2">
+<a class="flex items-center gap-2 group min-w-0" data-path="profile-karim" href="#">
+<div class="w-6 h-6 rounded-full bg-tertiary-container flex items-center justify-center text-on-tertiary-container text-[11px] font-semibold">
+                KM
+              </div>
+<span class="font-label-md text-label-md text-on-surface-variant group-hover:text-primary transition-colors truncate">
+                Karim M.
+              </span>
+</a>
+<button class="px-3.5 py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-sm hover:bg-primary-container active:scale-95 transition-all" onclick="showLoanModal('The Master and Margarita', 'Karim Mansour')" type="button">
+              Borrow Request
+            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Circulating in Your Circle Books -->
+<section class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">cached</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Circulating in Circle</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">4 newly placed</span>
+</div>
+<!-- Books List / Tactile Stack -->
+<div class="flex flex-col gap-3">
+<!-- Book Card 1: The Book of Disquiet -->
+<article class="bg-surface-container-low rounded-xl p-3.5 flex gap-3.5 shadow-sm transition-all hover:bg-surface-container">
+<!-- Cover Art -->
+<div class="relative w-20 h-28 flex-shrink-0 rounded bg-surface-container-highest shadow-sm overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Editorial book cover for Fernando Pessoa's The Book of Disquiet. Pale bone and sage green typography with antique lithograph fragments, melancholic Lisbon atmosphere, archival book craft texture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKiNLI23yhwY46iBMnrHyMkz8J0Tj2AIyJuJOJgmv4jx8VYj8ARTYz-PTKIZ-u64NW0CiwiTIkLRTJ1PQeoeMXeQpaTwMsoFfgsydnJt20LiAZIk5QiETCWD8p3ehAdbHvkEsla-AwGKFyUjD0ECSuer7vTw08eXyz-RG8F8kIx-xqCAM0ECGmceIjqBZdepoMSBoouP8gvGF1jJ966KYXvFhjh08nUdiiUdVMmTed">
+<div class="absolute inset-y-0 left-0 w-[2px] bg-black/15 pointer-events-none"></div>
+</div>
+<!-- Info & Actions -->
+<div class="flex flex-col justify-between flex-1 min-w-0">
+<div>
+<div class="flex items-center justify-between gap-1 mb-1">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                AVAILABLE
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Philosophy</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-snug truncate">
+              The Book of Disquiet
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic truncate">
+              Fernando Pessoa
+            </p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-center gap-1.5 min-w-0">
+<div class="w-5 h-5 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed text-[10px] font-semibold">
+                SC
+              </div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Sarah Chen</span>
+</div>
+<button class="px-3 py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm active:scale-95 transition-all shadow-sm" onclick="showLoanModal('The Book of Disquiet', 'Sarah Chen')" type="button">
+              Request Book
+            </button>
+</div>
+</div>
+</article>
+<!-- Book Card 2: Ficciones (Lent out state) -->
+<article class="bg-surface-container-low rounded-xl p-3.5 flex gap-3.5 shadow-sm opacity-95 transition-all hover:bg-surface-container">
+<!-- Cover Art -->
+<div class="relative w-20 h-28 flex-shrink-0 rounded bg-surface-container-highest shadow-sm overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Geometric minimalist cover of Ficciones by Jorge Luis Borges. Deep terracotta and ink labyrinths printed on handmade fibrous paper, tactile letterpress quality with matte finish." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmSZViu9tzJASNoq1YKP3x-fjocMz6ILT9OEHUUNP0jw_kQ50Yx_Bk55PHuuzsDSJNh2EDWNu3H_vnNHd9a_H-0cT6J0xbBB4JgvRzE8ZfYI4Pcz2mbYxgJTqc2Hs6M5IrLy8Xro4ki2PssXn-AIrwZZkcxP_Zs2RsaDJP16U_v6ojtifnm8Mai-B7J0LW6avIgh14P6VlXPoDA1DIIdG-OTE7sMG9ShmVXjJtK-Xe">
+<div class="absolute inset-y-0 left-0 w-[2px] bg-black/15 pointer-events-none"></div>
+</div>
+<!-- Info & Actions -->
+<div class="flex flex-col justify-between flex-1 min-w-0">
+<div>
+<div class="flex items-center justify-between gap-1 mb-1">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[12px]">schedule</span>
+                LENT TO JULIAN
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Stories</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-snug truncate">
+              Ficciones
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic truncate">
+              Jorge Luis Borges
+            </p>
+<p class="font-label-sm text-label-sm text-tertiary mt-1">
+              Due in 5 days • Reading session active
+            </p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1.5 min-w-0">
+<div class="w-5 h-5 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface-variant text-[10px] font-semibold">
+                OF
+              </div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Omar Farooq</span>
+</div>
+<button class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm hover:bg-surface-container-highest active:scale-95 transition-all" onclick="notifyWhenFree('Ficciones')" type="button">
+              Waitlist
+            </button>
+</div>
+</div>
+</article>
+<!-- Book Card 3: Labyrinths -->
+<article class="bg-surface-container-low rounded-xl p-3.5 flex gap-3.5 shadow-sm transition-all hover:bg-surface-container">
+<!-- Cover Art -->
+<div class="relative w-20 h-28 flex-shrink-0 rounded bg-surface-container-highest shadow-sm overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Vintage publication cover of Labyrinths by Jorge Luis Borges. Intricate architectural woodcut illustration of endless library staircases on warm archival parchment paper." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDV4z7NohfvND3rofKXtmBHZq2HWYg2ohyCegh6Us6MajDnH8XBRCo8HQS18T038DP-NyHP08zUUYOULhDCHiPFpl8TRRvAY6SJy3CN9VjRday81nn9Usntc2aIF-201Z545_GnBybA4B7cIDSvY8FPLnnLRZSzrWlTIazca8BOqeMly8xEITEJkpjFKGaXR73x2jdwsIGAv1a_b7Rna0jkz6Dv_xt8D-R7248kdIL_">
+<div class="absolute inset-y-0 left-0 w-[2px] bg-black/15 pointer-events-none"></div>
+</div>
+<!-- Info & Actions -->
+<div class="flex flex-col justify-between flex-1 min-w-0">
+<div>
+<div class="flex items-center justify-between gap-1 mb-1">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                AVAILABLE
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Fiction</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-snug truncate">
+              Labyrinths
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic truncate">
+              Jorge Luis Borges
+            </p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-center gap-1.5 min-w-0">
+<div class="w-5 h-5 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed text-[10px] font-semibold">
+                ML
+              </div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Maya Lin</span>
+</div>
+<button class="px-3 py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm active:scale-95 transition-all shadow-sm" onclick="showLoanModal('Labyrinths', 'Maya Lin')" type="button">
+              Request Book
+            </button>
+</div>
+</div>
+</article>
+<!-- Book Card 4: Orlando -->
+<article class="bg-surface-container-low rounded-xl p-3.5 flex gap-3.5 shadow-sm transition-all hover:bg-surface-container">
+<!-- Cover Art -->
+<div class="relative w-20 h-28 flex-shrink-0 rounded bg-surface-container-highest shadow-sm overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Artistic cover of Orlando by Virginia Woolf. Rich emerald and muted gold floral patterns surrounding an enigmatic profile silhouette, fine press limited edition style on cream paper." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3x5pyMmNHkNC2ahHH4r4e-0FtaWbM910vyveWN8EfXCv0HaXq6Fz_l9BJYeuWfAzdKMNvyQecemg1_Fc-BtoHD2PTiZLTRd3prA5q7LrZNroUTS517hWWi_pbdFP3CvdH4qi-vlso1NgDelbC6C2S463Q_eEa28yNhCjojCiKR0c4ObmvOnqO9byf1_9bmkR6X59msaNV6WUWxjzfoISdwFWUCQg3lMD68_ABKSRM">
+<div class="absolute inset-y-0 left-0 w-[2px] bg-black/15 pointer-events-none"></div>
+</div>
+<!-- Info & Actions -->
+<div class="flex flex-col justify-between flex-1 min-w-0">
+<div>
+<div class="flex items-center justify-between gap-1 mb-1">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                AVAILABLE
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Classic</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-snug truncate">
+              Orlando
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic truncate">
+              Virginia Woolf
+            </p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-center gap-1.5 min-w-0">
+<div class="w-5 h-5 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container text-[10px] font-semibold">
+                LA
+              </div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Layla Al-Mansoor</span>
+</div>
+<button class="px-3 py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm active:scale-95 transition-all shadow-sm" onclick="showLoanModal('Orlando', 'Layla Al-Mansoor')" type="button">
+              Request Book
+            </button>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Interactive Circle Etiquette Callout -->
+<section class="bg-surface-container p-4 rounded-xl flex items-start gap-3 shadow-sm">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-label-lg text-label-lg text-on-surface">Private&nbsp; Protocol</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+        Volumes are exchanged in trust. Private margins and personal reading logs remain strictly confidential until mutually unlocked.
+      </p>
+</div>
+</section>
+<!-- Borrow Request Bottom Drawer / Modal (Hidden by Default) -->
+<div class="fixed inset-0 z-50 flex items-end justify-center bg-black/40 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-200" id="requestModal">
+<div class="w-full max-w-md bg-surface-bright rounded-t-2xl p-5 shadow-2xl flex flex-col gap-4 transform translate-y-full transition-transform duration-300" id="modalCard">
+<div class="w-10 h-1 bg-outline-variant/60 rounded-full mx-auto mb-1"></div>
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Lending Request</span>
+<h3 class="font-headline-md text-headline-md text-on-surface tracking-tight mt-0.5" id="modalBookTitle">Book Title</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant" id="modalBookOwner">Owned by Member</p>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant" onclick="closeLoanModal()" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="bg-surface-container-low p-3.5 rounded-xl flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface-variant" for="requestNote">Note to owner (optional)</label>
+<textarea class="w-full bg-surface rounded-lg p-2.5 font-body-sm text-body-sm text-on-surface placeholder:text-outline outline-none border-none resize-none" id="requestNote" placeholder="e.g. Would love to read this for our weekend tea meetup..." rows="2"></textarea>
+</div>
+<div class="flex items-center gap-3 pt-1">
+<button class="flex-1 py-3 rounded-full bg-surface-container text-on-surface font-label-lg text-label-lg active:scale-95 transition-all text-center" onclick="closeLoanModal()" type="button">
+          Cancel
+        </button>
+<button class="flex-1 py-3 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-md active:scale-95 transition-all text-center" id="sendRequestBtn" onclick="submitRequest()" type="button">
+          Send Request
+        </button>
+</div>
+</div>
+</div>
+<!-- Notification Toast -->
+<div class="fixed bottom-20 left-1/2 -translate-x-1/2 bg-inverse-surface text-inverse-on-surface px-4 py-2.5 rounded-full font-label-md text-label-md shadow-lg flex items-center gap-2 opacity-0 pointer-events-none transition-all duration-300 z-50" id="toast">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]">check_circle</span>
+<span id="toastMessage">Request dispatched to member</span>
+</div>
+</div>
+<script>
+  // Simple view controller for Discovery interactive filters and modals
+  const availBtn = document.getElementById('toggleAvailBtn');
+  const allBtn = document.getElementById('toggleAllBtn');
+  const modal = document.getElementById('requestModal');
+  const modalCard = document.getElementById('modalCard');
+  const toast = document.getElementById('toast');
+
+  availBtn?.addEventListener('click', () => {
+    availBtn.classList.add('bg-surface', 'text-primary', 'shadow-sm');
+    availBtn.classList.remove('text-on-surface-variant');
+    allBtn.classList.remove('bg-surface', 'text-primary', 'shadow-sm');
+    allBtn.classList.add('text-on-surface-variant');
+  });
+
+  allBtn?.addEventListener('click', () => {
+    allBtn.classList.add('bg-surface', 'text-primary', 'shadow-sm');
+    allBtn.classList.remove('text-on-surface-variant');
+    availBtn.classList.remove('bg-surface', 'text-primary', 'shadow-sm');
+    availBtn.classList.add('text-on-surface-variant');
+  });
+
+  function showLoanModal(title, owner) {
+    document.getElementById('modalBookTitle').innerText = title;
+    document.getElementById('modalBookOwner').innerText = 'Owned by ' + owner;
+    modal.classList.remove('opacity-0', 'pointer-events-none');
+    modalCard.classList.remove('translate-y-full');
+  }
+
+  function closeLoanModal() {
+    modalCard.classList.add('translate-y-full');
+    modal.classList.add('opacity-0', 'pointer-events-none');
+  }
+
+  function triggerToast(text) {
+    const toastMsg = document.getElementById('toastMessage');
+    if (toastMsg) toastMsg.innerText = text;
+    toast.classList.remove('opacity-0', 'pointer-events-none');
+    toast.classList.add('-translate-y-2');
+    setTimeout(() => {
+      toast.classList.add('opacity-0', 'pointer-events-none');
+      toast.classList.remove('-translate-y-2');
+    }, 2800);
+  }
+
+  function submitRequest() {
+    closeLoanModal();
+    triggerToast('Borrow invitation sent to member');
+  }
+
+  function notifyWhenFree(title) {
+    triggerToast('Added to waitlist for ' + title);
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-semibold"><div class="flex justify-around items-center h-16 px-space-xs max-w-md mx-auto"><a class="flex-1 min-w-[44px] min-h-[44px] flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-on-surface transition-all active:scale-95 group" data-path="home" href="#"><span class="material-symbols-outlined text-[22px] transition-transform group-hover:-translate-y-0.5">auto_stories</span><span class="font-label-sm text-label-sm leading-tight tracking-normal">Home</span></a><a class="flex-1 min-w-[44px] min-h-[44px] flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-on-surface transition-all active:scale-95 group" data-path="discover" href="#"><span class="material-symbols-outlined text-[22px] transition-transform group-hover:-translate-y-0.5">explore</span><span class="font-label-sm text-label-sm leading-tight tracking-normal">Discover</span></a><div class="flex-1 flex items-center justify-center"><a aria-label="Add Book or Thought" class="w-12 h-12 -mt-4 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-[0_4px_14px_rgba(147,60,41,0.3)] hover:bg-primary-container active:scale-95 transition-all" data-path="add-entry" href="#"><span class="material-symbols-outlined text-[24px]">add</span></a></div><a class="flex-1 min-w-[44px] min-h-[44px] flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-on-surface transition-all active:scale-95 group" data-path="reading-corner" href="#"><span class="material-symbols-outlined text-[22px] transition-transform group-hover:-translate-y-0.5">local_library</span><span class="font-label-sm text-label-sm leading-tight tracking-normal text-center">Corner</span></a><a class="flex-1 min-w-[44px] min-h-[44px] flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-on-surface transition-all active:scale-95 group" data-path="profile" href="#"><span class="material-symbols-outlined text-[22px] transition-transform group-hover:-translate-y-0.5">person_book</span><span class="font-label-sm text-label-sm leading-tight tracking-normal">Profile</span></a></div></nav>
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true" style="visibility: visible !important;"></grammarly-desktop-integration></html>

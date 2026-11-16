@@ -1,0 +1,401 @@
+<!DOCTYPE html><html class="h-full" lang="en" data-qb-installed="true"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#fff8f6;color:#211a18;-webkit-tap-highlight-color:transparent;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:calc(env(safe-area-inset-bottom,0px) + 0.5rem);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}*{-ms-overflow-style:none;scrollbar-width:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary-fixed-dim": "#ffb4a4", "primary-fixed": "#ffdad3", "surface-container-high": "#f3e5e2", "secondary-container": "#d1e5cb", "error": "#ba1a1a", "on-surface": "#211a18", "on-background": "#211a18", "surface-tint": "#9c432f", "secondary": "#51634e", "tertiary-fixed-dim": "#f0bd8b", "on-surface-variant": "#56423e", "secondary-fixed-dim": "#b8ccb3", "on-primary-fixed-variant": "#7d2c1a", "background": "#fff8f6", "inverse-primary": "#ffb4a4", "surface-container-low": "#fff1ed", "primary-container": "#b2533e", "surface": "#fff8f6", "on-primary-container": "#fff1ee", "on-error": "#ffffff", "on-tertiary-fixed": "#2c1600", "on-tertiary-fixed-variant": "#623f18", "error-container": "#ffdad6", "on-error-container": "#93000a", "on-tertiary": "#ffffff", "surface-container-highest": "#ede0dc", "tertiary-container": "#91673c", "tertiary": "#754f27", "on-secondary": "#ffffff", "on-primary": "#ffffff", "surface-variant": "#ede0dc", "surface-container-lowest": "#ffffff", "surface-container": "#f9ebe7", "outline": "#89726d", "secondary-fixed": "#d4e8ce", "primary": "#933c29", "on-secondary-fixed": "#0f1f0f", "outline-variant": "#dcc1bb", "surface-dim": "#e4d7d4", "tertiary-fixed": "#ffdcbd", "on-primary-fixed": "#3d0600", "on-secondary-container": "#556752", "on-tertiary-container": "#fff2e9", "inverse-on-surface": "#fceeea", "inverse-surface": "#362f2d", "on-secondary-fixed-variant": "#3a4b38", "surface-bright": "#fff8f6" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xl": "2.25rem", "gutter": "1rem", "margin": "1.25rem", "gutter-compact": "0.75rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-md": "1rem", "margin-expanded": "1.5rem" }, fontFamily: { "title-md": ["Newsreader"], "headline-sm": ["Newsreader"], "headline-lg": ["Newsreader"], "body-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-md": ["Newsreader"], "display-lg-mobile": ["Newsreader"], "body-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "display-lg": ["Newsreader"] }, fontSize: { "title-md": ["16px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "500" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-lg": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "label-sm": ["10px", { "lineHeight": "12px", "letterSpacing": "0.06em", "fontWeight": "700" }], "label-lg": ["13px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-md": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "display-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "500" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style></style></head><body class="min-h-full bg-surface text-on-surface flex flex-col font-body-md text-body-md antialiased selection:bg-primary-fixed selection:text-on-primary-fixed" data-new-gr-c-s-check-loaded="14.1347.0" data-gr-ext-installed="" data-new-gr-c-s-loaded="14.1347.0"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Hekaya App Icon" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDdlsVk8q8gtmTsxqxp8md2PoVKaVJmuoJe-F1h0xVpIAihmQkmchfJm_qxZ8SdZ-5PpgOiS7XjZt_4la__CsHkPmR3ddKHlpxlE7BHsnWjo3D2nQYT9UvmarxTJ-rzxbYN-9X0ouPo2nNAh0WKRBizwsyvmrFbTpAhcAXFoNocPUi29b-l-tNknjkmd7iRu2JUapu6T72gnkQi34GvkSamBvrF13lEKJEAvfJdwRx_sw"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">Hekaya</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider leading-none mt-1">Home</span></div></div><div class="flex items-center gap-space-xs"><button class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span></button><a class="w-11 h-11 flex items-center justify-center p-0.5 rounded-full transition-transform active:scale-95" data-path="profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfZqFH8SPCOFTMH2JW6t1llPI-eYKBWT0oAGFp35aVMM37kmzfNuPrl9v8EoZtpyj51a_kc9XGsspddjDd5y66Up-Ee2Zkmv4NaoqlC2NwKChVH9z7U5cIiFoOF0KeY4682pkzClTu3GoNPsf8BSp0xO0lvmQcig72yyVQ2uvB59ywLhEzTihrepj5CZWsNZQQVqgeYb00_Rz0uHoif8S2m-1i_MH5U_riS8a8uOLp"></a></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-28 bg-surface px-margin"><div class="flex flex-col w-full pb-8">
+<!-- Modal Style Sub-Bar / Action Top Bar -->
+<div class="flex items-center justify-between py-space-xs mb-space-md">
+<button class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors py-1 px-2 -ml-2 rounded-lg flex items-center gap-1 active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+<span>Cancel</span>
+</button>
+<div class="flex flex-col items-center">
+<h1 class="font-title-md text-title-md text-on-surface">Add Volume</h1>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Catalog Sanctuary</span>
+</div>
+<button class="bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg px-space-md py-1.5 rounded-full shadow-sm active:scale-95 transition-all" id="header-save-btn" type="button">
+      Save Book
+    </button>
+</div>
+<form class="flex flex-col gap-space-lg" id="book-form" onsubmit="event.preventDefault();">
+<!-- 1. Cover Art Upload & Spine Tactility -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-sm relative overflow-hidden">
+<div class="flex items-start gap-space-md">
+<!-- Cover Preview Frame -->
+<div class="relative w-24 h-36 rounded-lg bg-surface-container-lowest flex-shrink-0 shadow-inner flex flex-col items-center justify-center p-2 cursor-pointer group active:scale-98 transition-all overflow-hidden" id="cover-dropzone">
+<!-- Subtle Book Spine Crease Effect via Hairline Shadow -->
+<div class="absolute left-1.5 top-0 bottom-0 w-[1px] bg-black/10 pointer-events-none z-10"></div>
+<img class="absolute inset-0 w-full h-full object-cover rounded-lg hidden" data-alt="Close up archival photograph of a classic clothbound vintage book cover titled The Shadow of the Wind with embossed warm foil lettering and deep wine and terracotta textures on antique heavy paper" id="cover-preview" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiKebnkgQgbkuox9VRUKG-XQruAF7HxDLUv4-nH1uX1ZzTDkSwz6ej3Y-3DIFxaXXTTgjoJiWuhWOITh2HiR8oxz6Yv4NZ-KJPQnB8JEeiMQC6btEwTdabds4CUnLJtnksc03q2gIplQh7IJn6e06RbGSocZyxRKemhB1k7uvQlcn4AI-0rCyhFs1NzrsPQg9oWscVCuDP2nKemEcljW86pfu-oUYg1MFlzdidSy7h">
+<div class="flex flex-col items-center justify-center text-center p-1" id="cover-placeholder">
+<span class="material-symbols-outlined text-primary text-[28px] group-hover:scale-110 transition-transform">menu_book</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1 leading-tight">Add Art</span>
+</div>
+<div class="absolute bottom-1 right-1 bg-surface-container-high/90 rounded-full w-5 h-5 flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[13px] text-on-surface-variant">photo_camera</span>
+</div>
+<input accept="image/*" class="hidden" id="cover-file-input" type="file">
+</div>
+<!-- Cover Details / Guidance -->
+<div class="flex-1 min-w-0 flex flex-col justify-center py-1">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Folio Visual</span>
+<span class="material-symbols-outlined text-[14px] text-secondary">verified</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mt-0.5 leading-snug">Cover Illustration</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+            Upload a portrait photo, scanner capture, or frontispiece. Clothbound bindings and deckled edges encouraged.
+          </p>
+<div class="flex items-center gap-space-sm mt-3">
+<button class="font-label-sm text-label-sm bg-surface-container-highest hover:bg-surface-container-high text-on-surface px-3 py-1.5 rounded-full transition-colors active:scale-95 inline-flex items-center gap-1" onclick="document.getElementById('cover-file-input').click()" type="button">
+<span class="material-symbols-outlined text-[14px]">file_upload</span>
+<span>Select File</span>
+</button>
+<button class="font-label-sm text-label-sm text-primary hover:text-primary-container transition-colors py-1 px-2" id="quick-fill-cover" type="button">
+              Use Sample
+            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- 2. Core Book Metadata -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[20px]">ink_pen</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Bibliographic Details</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Archive Record</span>
+</div>
+<!-- Title Input -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface-variant flex items-center justify-between" for="book-title">
+<span>Book Title <span class="text-primary">*</span></span>
+<span class="font-label-sm text-label-sm text-outline">Full Inscription</span>
+</label>
+<div class="relative">
+<input class="w-full bg-surface-container-lowest text-on-surface font-title-md text-title-md px-3.5 py-3 rounded-lg placeholder:text-outline focus:outline-none focus:bg-surface-container-low transition-all shadow-inner" id="book-title" name="title" placeholder="e.g., Invisible Cities" required="" type="text" value="The Shadow of the Wind">
+</div>
+</div>
+<!-- Author Input -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface-variant flex items-center justify-between" for="book-author">
+<span>Author / Writer <span class="text-primary">*</span></span>
+<span class="font-label-sm text-label-sm text-outline">Creator</span>
+</label>
+<div class="relative">
+<input class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md px-3.5 py-2.5 rounded-lg placeholder:text-outline focus:outline-none focus:bg-surface-container-low transition-all shadow-inner" id="book-author" name="author" placeholder="e.g., Italo Calvino" required="" type="text" value="Carlos Ruiz Zafón">
+</div>
+</div>
+<!-- Genre / Shelf Category Pills -->
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface-variant">
+          Shelf Classification &amp; Category
+        </label>
+<div class="flex flex-wrap gap-1.5" id="genre-container">
+<button class="genre-pill px-3 py-1.5 rounded-full font-label-md text-label-md transition-all active:scale-95 bg-primary text-on-primary shadow-xs font-semibold" data-genre="Fiction" type="button">
+            Fiction
+          </button>
+<button class="genre-pill px-3 py-1.5 rounded-full font-label-md text-label-md transition-all active:scale-95 bg-surface-container-lowest text-on-surface hover:bg-surface-container-high" data-genre="Philosophy" type="button">
+            Philosophy
+          </button>
+<button class="genre-pill px-3 py-1.5 rounded-full font-label-md text-label-md transition-all active:scale-95 bg-surface-container-lowest text-on-surface hover:bg-surface-container-high" data-genre="Memoir" type="button">
+            Memoir
+          </button>
+<button class="genre-pill px-3 py-1.5 rounded-full font-label-md text-label-md transition-all active:scale-95 bg-surface-container-lowest text-on-surface hover:bg-surface-container-high" data-genre="Poetry" type="button">
+            Poetry
+          </button>
+<button class="genre-pill px-3 py-1.5 rounded-full font-label-md text-label-md transition-all active:scale-95 bg-surface-container-lowest text-on-surface hover:bg-surface-container-high" data-genre="History" type="button">
+            History
+          </button>
+<button class="genre-pill px-3 py-1.5 rounded-full font-label-md text-label-md transition-all active:scale-95 bg-surface-container-lowest text-on-surface hover:bg-surface-container-high" data-genre="Essays" type="button">
+            Essays
+          </button>
+</div>
+<input id="selected-genre" name="genre" type="hidden" value="Fiction">
+</div>
+<!-- Year & Translator Grid -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface-variant" for="book-year">
+            Publication Year
+          </label>
+<input class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md px-3.5 py-2.5 rounded-lg placeholder:text-outline focus:outline-none focus:bg-surface-container-low transition-all shadow-inner" id="book-year" name="year" placeholder="2001" type="number" value="2001">
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface-variant" for="book-edition">
+            Edition / Translator
+          </label>
+<input class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md px-3.5 py-2.5 rounded-lg placeholder:text-outline focus:outline-none focus:bg-surface-container-low transition-all shadow-inner" id="book-edition" name="edition" placeholder="1st Ed., Penguin" type="text" value="Lucia Graves (Tr.)">
+</div>
+</div>
+<!-- Literary Synopsis -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface-variant flex items-center justify-between" for="book-synopsis">
+<span>Brief Synopsis &amp; Arc</span>
+<span class="font-label-sm text-label-sm text-outline">Editorial</span>
+</label>
+<textarea class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md px-3.5 py-2.5 rounded-lg placeholder:text-outline focus:outline-none focus:bg-surface-container-low transition-all resize-none shadow-inner leading-relaxed" id="book-synopsis" name="synopsis" placeholder="A gothic tale of a forgotten book and the labyrinthine cemetery of lost books in Barcelona..." rows="3">A gothic tale of a forgotten book and the labyrinthine cemetery of lost books in Barcelona, where a young boy claims a cursed volume that draws him into shadows of old passions and revenge.</textarea>
+</div>
+</div>
+<!-- 3. Privacy & Sharing Settings (Circle Ecosystem) -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">diversity_3</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Circle &amp; Privacy</h2>
+</div>
+<span class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded-full font-bold uppercase">
+          Sanctum Rules
+        </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant -mt-1 leading-normal">
+        Decide how this volume circulates among your private literary companions.
+      </p>
+<!-- Visibility Selection Cards -->
+<div class="flex flex-col gap-2.5" id="visibility-group">
+<!-- Public Option -->
+<label class="cursor-pointer relative flex items-start gap-3 p-3 rounded-lg bg-surface-container-lowest shadow-sm hover:bg-surface-container-low transition-all" id="opt-public">
+<input checked="" class="mt-1 accent-primary" name="visibility" type="radio" value="public">
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">public</span>
+<span class="font-headline-sm text-headline-sm text-on-surface text-[15px]">Public to Circle</span>
+<span class="ml-auto font-label-sm text-label-sm bg-secondary/15 text-secondary px-2 py-0.5 rounded-full font-semibold">Active</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
+              Friends and trusted readers in your salon can see this book and request to borrow it if available.
+            </p>
+</div>
+</label>
+<!-- Private Option -->
+<label class="cursor-pointer relative flex items-start gap-3 p-3 rounded-lg bg-surface-container-low hover:bg-surface-container-lowest transition-all" id="opt-private">
+<input class="mt-1 accent-primary" name="visibility" type="radio" value="private">
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-outline text-[18px]">lock</span>
+<span class="font-headline-sm text-headline-sm text-on-surface text-[15px]">Private Archive</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
+              Only visible to you. Hidden from Discover, search, and other members' shelf views.
+            </p>
+</div>
+</label>
+</div>
+<!-- Lending Availability Toggle -->
+<div class="bg-surface-container-lowest rounded-lg p-3 flex items-center justify-between shadow-xs transition-opacity duration-200" id="lending-container">
+<div class="flex items-center gap-2.5 pr-2">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">handshake</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface leading-tight">Allow friends to request loans</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Physical lending enabled with return tracking</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer flex-shrink-0">
+<input checked="" class="sr-only peer" id="lending-toggle" type="checkbox">
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-primary after:border-surface-dim after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+</div>
+<!-- 4. Personal Notes & Marginalia (Owner-Only Private Field) -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-sm relative overflow-hidden flex flex-col gap-space-sm">
+<!-- Archival Stamp Detail / Watermark feeling -->
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Personal Notes &amp; Marginalia</h2>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-bold">Strictly Private Sanctum</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[24px]">bookmark_heart</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-2.5 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] flex-shrink-0">shield</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
+          Private to you. Will never appear in public feeds, book details for other members, or shared reading lists.
+        </p>
+</div>
+<div class="flex flex-col gap-1.5 mt-1">
+<label class="font-label-md text-label-md text-on-surface-variant flex items-center justify-between" for="personal-notes">
+<span>Private Reflections, Inscriptions &amp; Quotes</span>
+<span class="font-label-sm text-label-sm text-outline">Owner Eyes Only</span>
+</label>
+<textarea class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md px-3.5 py-2.5 rounded-lg placeholder:text-outline focus:outline-none focus:bg-surface-container-low transition-all resize-none shadow-inner leading-relaxed" id="personal-notes" name="personal_notes" placeholder="Personal reflections, where you bought it, memories..." rows="4">Gifted by Sarah for autumn solstice. Page 142 passage on memory is unforgettable. Remember to re-read the chapter on the Sempere bookshop before visiting Spain next summer.</textarea>
+</div>
+<!-- Quick Micro-tag Marginalia Helper -->
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">edit_note</span>
+<span>Last modified today</span>
+</span>
+<button class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" id="clear-notes-btn" type="button">
+          Clear Notes
+        </button>
+</div>
+</div>
+<!-- Additional Rich Metadata Accents / Read Status -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">auto_stories</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface text-[15px]">Reading State</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Add directly to current active shelf</span>
+</div>
+</div>
+<select class="bg-surface-container-lowest text-on-surface font-label-md text-label-md py-2 px-3 rounded-full shadow-xs focus:outline-none cursor-pointer">
+<option selected="" value="finished">Finished</option>
+<option value="currently-reading">Currently Reading</option>
+<option value="want-to-read">Plan to Read</option>
+<option value="reference">Reference Only</option>
+</select>
+</div>
+<!-- Primary Action Save Button -->
+<div class="pt-2 flex flex-col gap-2">
+<button class="w-full h-12 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-sm transition-all active:scale-98" id="main-save-btn" type="submit">
+<span class="material-symbols-outlined text-[20px]">library_add_check</span>
+<span>Save to My Library</span>
+</button>
+<p class="text-center font-label-sm text-label-sm text-on-surface-variant">
+        This edition will be indexed into your personal literary sanctum.
+      </p>
+</div>
+</form>
+<!-- Interactive Client-side Script -->
+<script>
+    (function initBookForm() {
+      // Cover preview interactivity
+      const dropzone = document.getElementById('cover-dropzone');
+      const fileInput = document.getElementById('cover-file-input');
+      const coverPreview = document.getElementById('cover-preview');
+      const coverPlaceholder = document.getElementById('cover-placeholder');
+      const quickFillBtn = document.getElementById('quick-fill-cover');
+
+      function showCover() {
+        if (coverPreview && coverPlaceholder) {
+          coverPreview.classList.remove('hidden');
+          coverPlaceholder.classList.add('hidden');
+        }
+      }
+
+      if (dropzone && fileInput) {
+        dropzone.addEventListener('click', () => fileInput.click());
+        fileInput.addEventListener('change', (e) => {
+          if (e.target.files && e.target.files[0]) {
+            const reader = new FileReader();
+            reader.onload = (event) => {
+              coverPreview.src = event.target.result;
+              showCover();
+            };
+            reader.readAsDataURL(e.target.files[0]);
+          }
+        });
+      }
+
+      if (quickFillBtn) {
+        quickFillBtn.addEventListener('click', showCover);
+      }
+
+      // Genre pills selection
+      const genrePills = document.querySelectorAll('.genre-pill');
+      const genreInput = document.getElementById('selected-genre');
+
+      genrePills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          genrePills.forEach(p => {
+            p.classList.remove('bg-primary', 'text-on-primary', 'font-semibold');
+            p.classList.add('bg-surface-container-lowest', 'text-on-surface');
+          });
+          pill.classList.remove('bg-surface-container-lowest', 'text-on-surface');
+          pill.classList.add('bg-primary', 'text-on-primary', 'font-semibold');
+          if (genreInput) {
+            genreInput.value = pill.getAttribute('data-genre') || '';
+          }
+        });
+      });
+
+      // Visibility radio behavior & loan toggle sync
+      const radioPublic = document.querySelector('input[value="public"]');
+      const radioPrivate = document.querySelector('input[value="private"]');
+      const lendingContainer = document.getElementById('lending-container');
+      const lendingToggle = document.getElementById('lending-toggle');
+
+      function updateLendingState() {
+        if (radioPrivate && radioPrivate.checked) {
+          if (lendingContainer) {
+            lendingContainer.classList.add('opacity-40', 'pointer-events-none');
+          }
+          if (lendingToggle) {
+            lendingToggle.checked = false;
+          }
+        } else {
+          if (lendingContainer) {
+            lendingContainer.classList.remove('opacity-40', 'pointer-events-none');
+          }
+          if (lendingToggle) {
+            lendingToggle.checked = true;
+          }
+        }
+      }
+
+      if (radioPublic) radioPublic.addEventListener('change', updateLendingState);
+      if (radioPrivate) radioPrivate.addEventListener('change', updateLendingState);
+
+      // Clear notes helper
+      const clearNotesBtn = document.getElementById('clear-notes-btn');
+      const notesArea = document.getElementById('personal-notes');
+      if (clearNotesBtn && notesArea) {
+        clearNotesBtn.addEventListener('click', () => {
+          notesArea.value = '';
+          notesArea.placeholder = 'Start writing your private marginalia, quotes, or thoughts...';
+          notesArea.focus();
+        });
+      }
+
+      // Save feedback simulation
+      const mainSaveBtn = document.getElementById('main-save-btn');
+      const headerSaveBtn = document.getElementById('header-save-btn');
+
+      function triggerSave(btn) {
+        if (!btn) return;
+        const originalText = btn.innerHTML;
+        btn.disabled = true;
+        btn.innerHTML = `<span class="material-symbols-outlined text-[18px] animate-spin">progress_activity</span><span>Cataloging...</span>`;
+        setTimeout(() => {
+          btn.innerHTML = `<span class="material-symbols-outlined text-[18px]">done</span><span>Added to Sanctuary</span>`;
+          btn.classList.remove('bg-primary', 'hover:bg-primary-container');
+          btn.classList.add('bg-secondary', 'text-on-secondary');
+          setTimeout(() => {
+            btn.innerHTML = originalText;
+            btn.disabled = false;
+            btn.classList.remove('bg-secondary', 'text-on-secondary');
+            btn.classList.add('bg-primary', 'hover:bg-primary-container');
+          }, 2000);
+        }, 800);
+      }
+
+      if (mainSaveBtn) {
+        mainSaveBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          triggerSave(mainSaveBtn);
+        });
+      }
+      if (headerSaveBtn) {
+        headerSaveBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          triggerSave(headerSaveBtn);
+        });
+      }
+    })();
+  </script>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-semibold"><div class="flex justify-around items-center h-16 px-space-xs max-w-md mx-auto"><a class="flex-1 min-w-[44px] min-h-[44px] flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-on-surface transition-all active:scale-95 group" data-path="home" href="#"><span class="material-symbols-outlined text-[22px] transition-transform group-hover:-translate-y-0.5">auto_stories</span><span class="font-label-sm text-label-sm leading-tight tracking-normal">Home</span></a><a class="flex-1 min-w-[44px] min-h-[44px] flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-on-surface transition-all active:scale-95 group" data-path="discover" href="#"><span class="material-symbols-outlined text-[22px] transition-transform group-hover:-translate-y-0.5">explore</span><span class="font-label-sm text-label-sm leading-tight tracking-normal">Discover</span></a><div class="flex-1 flex items-center justify-center"><a aria-label="Add Book or Thought" class="w-12 h-12 -mt-4 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-[0_4px_14px_rgba(147,60,41,0.3)] hover:bg-primary-container active:scale-95 transition-all" data-path="add-entry" href="#"><span class="material-symbols-outlined text-[24px]">add</span></a></div><a class="flex-1 min-w-[44px] min-h-[44px] flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-on-surface transition-all active:scale-95 group" data-path="reading-corner" href="#"><span class="material-symbols-outlined text-[22px] transition-transform group-hover:-translate-y-0.5">local_library</span><span class="font-label-sm text-label-sm leading-tight tracking-normal text-center">Corner</span></a><a class="flex-1 min-w-[44px] min-h-[44px] flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-on-surface transition-all active:scale-95 group" data-path="profile" href="#"><span class="material-symbols-outlined text-[22px] transition-transform group-hover:-translate-y-0.5">person_book</span><span class="font-label-sm text-label-sm leading-tight tracking-normal">Profile</span></a></div></nav>
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true" style="visibility: visible !important;"></grammarly-desktop-integration></html>

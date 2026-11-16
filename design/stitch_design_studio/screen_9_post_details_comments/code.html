@@ -1,0 +1,404 @@
+<!DOCTYPE html><html class="h-full" lang="en" data-qb-installed="true"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#fff8f6;color:#211a18;-webkit-tap-highlight-color:transparent;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:calc(env(safe-area-inset-bottom,0px) + 0.5rem);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}*{-ms-overflow-style:none;scrollbar-width:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary-fixed-dim": "#ffb4a4", "primary-fixed": "#ffdad3", "surface-container-high": "#f3e5e2", "secondary-container": "#d1e5cb", "error": "#ba1a1a", "on-surface": "#211a18", "on-background": "#211a18", "surface-tint": "#9c432f", "secondary": "#51634e", "tertiary-fixed-dim": "#f0bd8b", "on-surface-variant": "#56423e", "secondary-fixed-dim": "#b8ccb3", "on-primary-fixed-variant": "#7d2c1a", "background": "#fff8f6", "inverse-primary": "#ffb4a4", "surface-container-low": "#fff1ed", "primary-container": "#b2533e", "surface": "#fff8f6", "on-primary-container": "#fff1ee", "on-error": "#ffffff", "on-tertiary-fixed": "#2c1600", "on-tertiary-fixed-variant": "#623f18", "error-container": "#ffdad6", "on-error-container": "#93000a", "on-tertiary": "#ffffff", "surface-container-highest": "#ede0dc", "tertiary-container": "#91673c", "tertiary": "#754f27", "on-secondary": "#ffffff", "on-primary": "#ffffff", "surface-variant": "#ede0dc", "surface-container-lowest": "#ffffff", "surface-container": "#f9ebe7", "outline": "#89726d", "secondary-fixed": "#d4e8ce", "primary": "#933c29", "on-secondary-fixed": "#0f1f0f", "outline-variant": "#dcc1bb", "surface-dim": "#e4d7d4", "tertiary-fixed": "#ffdcbd", "on-primary-fixed": "#3d0600", "on-secondary-container": "#556752", "on-tertiary-container": "#fff2e9", "inverse-on-surface": "#fceeea", "inverse-surface": "#362f2d", "on-secondary-fixed-variant": "#3a4b38", "surface-bright": "#fff8f6" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xl": "2.25rem", "gutter": "1rem", "margin": "1.25rem", "gutter-compact": "0.75rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-md": "1rem", "margin-expanded": "1.5rem" }, fontFamily: { "title-md": ["Newsreader"], "headline-sm": ["Newsreader"], "headline-lg": ["Newsreader"], "body-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-md": ["Newsreader"], "display-lg-mobile": ["Newsreader"], "body-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "display-lg": ["Newsreader"] }, fontSize: { "title-md": ["16px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "500" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-lg": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "label-sm": ["10px", { "lineHeight": "12px", "letterSpacing": "0.06em", "fontWeight": "700" }], "label-lg": ["13px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-md": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "display-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "500" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style></style></head><body class="min-h-full bg-surface text-on-surface flex flex-col font-body-md text-body-md antialiased selection:bg-primary-fixed selection:text-on-primary-fixed" data-new-gr-c-s-check-loaded="14.1347.0" data-gr-ext-installed="" data-new-gr-c-s-loaded="14.1347.0"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Hekaya App Icon" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDdlsVk8q8gtmTsxqxp8md2PoVKaVJmuoJe-F1h0xVpIAihmQkmchfJm_qxZ8SdZ-5PpgOiS7XjZt_4la__CsHkPmR3ddKHlpxlE7BHsnWjo3D2nQYT9UvmarxTJ-rzxbYN-9X0ouPo2nNAh0WKRBizwsyvmrFbTpAhcAXFoNocPUi29b-l-tNknjkmd7iRu2JUapu6T72gnkQi34GvkSamBvrF13lEKJEAvfJdwRx_sw"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">Hekaya</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider leading-none mt-1">Home</span></div></div><div class="flex items-center gap-space-xs"><button class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span></button><a class="w-11 h-11 flex items-center justify-center p-0.5 rounded-full transition-transform active:scale-95" data-path="profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfZqFH8SPCOFTMH2JW6t1llPI-eYKBWT0oAGFp35aVMM37kmzfNuPrl9v8EoZtpyj51a_kc9XGsspddjDd5y66Up-Ee2Zkmv4NaoqlC2NwKChVH9z7U5cIiFoOF0KeY4682pkzClTu3GoNPsf8BSp0xO0lvmQcig72yyVQ2uvB59ywLhEzTihrepj5CZWsNZQQVqgeYb00_Rz0uHoif8S2m-1i_MH5U_riS8a8uOLp"></a></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-28 bg-surface px-margin"><div class="flex flex-col w-full pb-20">
+<!-- Thread Sub-header Navigation -->
+<div class="flex items-center justify-between py-space-sm mb-space-md">
+<div class="flex items-center gap-space-sm">
+<button aria-label="Go Back" class="w-10 h-10 -ml-1.5 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+</button>
+<div class="flex flex-col">
+
+<span class="font-headline-sm text-headline-sm text-on-surface leading-tight">Thread #14</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button aria-label="Bookmark Thread" class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container active:scale-95 transition-all" id="bookmarkBtn" type="button">
+<span class="material-symbols-outlined text-[20px]">bookmark</span>
+</button>
+<button aria-label="Share Thread" class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</button>
+</div>
+</div>
+<!-- Main Literary Post Container -->
+<article class="bg-surface-container rounded-xl p-space-md shadow-sm mb-space-lg">
+<!-- Author Header -->
+<div class="flex items-start justify-between mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<img class="w-11 h-11 rounded-full object-cover" data-alt="Warm intimate portrait of Layla Al-Khatib, an elegant woman in a sunlit library surrounded by leather-bound books and warm terracotta tones, soft natural rim lighting, quiet literary aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBv58-UpSut7DLGMsTwJ0Mhfom_PKXhudMgFQcOXxwLeBk38paOTtyNnobGx0RE2gl4vzxYmvzX2i6Kch_4MmcVHwYUTfKpXCUOMxBQMJZiGj6uELMwKSHKCHFk2UOT-XEltm7DHYZzi9251fFtmnfHTUvI81pVE_SaxUv-ClPzwGOOW4KVtiwYfx4hS3E8wOpv0ZSJ-dxsmuyKOgo3d6CqwSoIh3vTpg94Tx4v9izo">
+<span class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center text-[10px]" title="Salon Contributor">
+<span class="material-symbols-outlined text-[10px]">ink_pen</span>
+</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-tight">Layla Al-Khatib</span>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-container/40 px-1.5 py-0.5 rounded-full">Fellow</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="font-label-sm text-label-sm">Member • 24 folios</span>
+<span class="text-[9px] opacity-60">•</span>
+<span class="font-label-sm text-label-sm">2 hours ago • Circle 04</span>
+</div>
+</div>
+</div>
+<button aria-label="Thread options" class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[18px]">more_horiz</span>
+</button>
+</div>
+<!-- Long-form Prose -->
+<div class="space-y-space-md text-on-surface mb-space-md">
+<p class="font-body-lg text-body-lg leading-relaxed">
+        Revisiting Calvino's <em class="font-headline-sm text-headline-sm text-primary">Invisible Cities</em> tonight. There is a line that struck me with renewed force:
+      </p>
+<!-- Tactile Excerpt Callout with Bookbinding Notch -->
+<blockquote class="bg-surface-container-low p-space-md rounded-lg relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-primary"></div>
+<div class="flex gap-space-xs text-primary/40 mb-1">
+<span class="material-symbols-outlined text-[18px]">format_quote</span>
+</div>
+<p class="font-headline-sm text-headline-sm italic text-on-surface leading-snug pl-1">
+          “With cities, it is as with dreams: everything imaginable can be dreamed, but even the most unexpected dream is a rebus that conceals a desire, or its reverse, a fear.”
+        </p>
+<span class="block text-right font-label-sm text-label-sm text-on-surface-variant mt-2 tracking-widest uppercase">— Page 44, City of Zaira</span>
+</blockquote>
+<p class="font-body-lg text-body-lg leading-relaxed">
+        How many of us read a book once for the story, and the second time for the city it builds inside our thoughts? When I first read this copy borrowed from Karim last winter, I saw it purely as architectural poetry. Reading it now during October rains, it feels like an elegy for forgotten spaces.
+      </p>
+</div>
+<!-- Linked Book Card Feature -->
+<a class="block bg-surface-container-low hover:bg-surface-container-highest/60 rounded-xl p-space-md transition-all active:scale-[0.99] group mb-space-md shadow-sm" href="#">
+<div class="flex gap-space-md">
+<!-- Physical Book Cover Preview -->
+<div class="relative w-20 flex-shrink-0 aspect-[2/3] rounded-lg overflow-hidden bg-surface-dim shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Cover of Invisible Cities by Italo Calvino, minimal architectural abstract illustration in Venetian terracotta and aged parchment paper, refined editorial letterpress typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyC3VDe0jgIZc_4iy5USd1ktN6O6OJjCOXklSMCopGym639oYUplQJoeci3bg718pDNMYFeZdPwY_5qA5GPRS_6U-dJK8jtVa24POytF98rkHilvbmt1_sdS6hZ6Lf6XIKZL4zLFgIO_vn6m9LcefBt0dQCteyJw-gzHFiOpnwvaEy_8y1rikf_-DeYWeY1RiytO9aaTmf_9P_SDy4lIMJX-z7xKypgT2CzUvTksfK">
+<div class="absolute inset-y-0 left-0 w-1 bg-black/15 shadow-[inset_1px_0_1px_rgba(0,0,0,0.2)]"></div>
+</div>
+<!-- Book Meta & Availability -->
+<div class="flex-1 flex flex-col justify-between min-w-0">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-container px-2 py-0.5 rounded-full inline-flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Public Shelf
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Archived Folio</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate group-hover:text-primary transition-colors">Invisible Cities</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Italo Calvino</p>
+<p class="font-label-md text-label-md text-on-surface-variant mt-1">1972 • Transl. William Weaver • Philosophy</p>
+</div>
+<div class="pt-2 flex items-center justify-between text-on-surface-variant group-hover:text-primary">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-tertiary">person</span>
+              Owned by Karim M.
+            </span>
+<span class="font-label-sm text-label-sm text-primary flex items-center font-semibold">
+              Open Folio
+              <span class="material-symbols-outlined text-[15px] transition-transform group-hover:translate-x-1">chevron_right</span>
+</span>
+</div>
+</div>
+</div>
+</a>
+<!-- Post Footnote & Metrics -->
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant">
+<div class="flex items-center gap-space-md">
+<span class="font-label-md text-label-md flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: &quot;FILL&quot; 1;">bubble_chart</span>
+          7 Reflections
+        </span>
+<span class="font-label-md text-label-md flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">bookmark</span>
+          4 Bookmarks
+        </span>
+</div>
+<div class="flex items-center gap-1">
+<button class="px-2.5 py-1 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-sm text-label-sm flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[14px]">auto_stories</span>
+          Folio View
+        </button>
+</div>
+</div>
+</article>
+<!-- Discussion Header -->
+<div class="flex items-center justify-between mb-space-sm px-1">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Reflections &amp; Marginalia</h3>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">7</span>
+</div>
+<div class="flex items-center text-on-surface-variant font-label-sm text-label-sm gap-1">
+<span class="material-symbols-outlined text-[14px]">sort</span>
+      Chronological
+    </div>
+</div>
+<!-- Comments Feed -->
+<div class="space-y-space-sm mb-space-xl">
+<!-- Comment 1: Karim Mansour (Owner of the book) -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-sm transition-all hover:bg-surface-container-high/60">
+<div class="flex items-start justify-between mb-2">
+<div class="flex items-center gap-space-sm">
+<img class="w-9 h-9 rounded-full object-cover" data-alt="Portrait of Karim Mansour, a scholarly middle-eastern gentleman with gentle spectacles, dark wool scarf, holding an espresso cup in an archival library" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJhGp_3JR2pQrBcqjD8EjXLjplAKbw74WEBh8dNsuHobhJmZjRVn5reIUw_S5Fxl8plCnj0wUdroDiwYZq8QUi64gX4nQvu4QMXAo2YEJE1YOajzx4R1RI5roikTD9bnH7VoTYxodHBttekcQJfVh8-e-WU-Na3b5dFt6gwko9BsNZxURtV6_PKT2r4Cd_luUG-cnYsnlWDwPby-zeAL2fsAtLlag4nqvpux5UbxdF">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface text-[15px]">Karim Mansour</span>
+<span class="font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed-variant px-1.5 py-0.2 rounded">Book Owner</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">1 hr ago • Fellow of Alexandria</span>
+</div>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[16px]">more_horiz</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed mb-3 pl-11">
+        I remember when you borrowed this exact volume, Layla! On page 64 there's a light pencil note from my university days in Cairo. Calvino wrote this while living in Paris, constantly homesick for Italian seaports.
+      </p>
+<div class="flex items-center justify-between pl-11 text-on-surface-variant">
+<div class="flex items-center gap-space-md">
+<button class="reply-trigger font-label-md text-label-md text-primary font-semibold hover:underline flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">reply</span>
+            Reply
+          </button>
+<button class="helpful-btn font-label-md text-label-md text-on-surface-variant hover:text-secondary flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[14px]">psychology_alt</span>
+<span>Helpful reflection</span>
+<span class="helpful-count font-bold text-secondary ml-0.5">3</span>
+</button>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant/70">Margin #1</span>
+</div>
+</div>
+<!-- Comment 2: Sarah Chen -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-sm transition-all hover:bg-surface-container-high/60">
+<div class="flex items-start justify-between mb-2">
+<div class="flex items-center gap-space-sm">
+<img class="w-9 h-9 rounded-full object-cover" data-alt="Portrait of Sarah Chen, thoughtful young woman with neat bob haircut reading by a cafe window, warm ambient sunlight, natural tones, soft terracotta warmth" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQZaabGf68gnbZPoYa9jCTJ3AMb0gwVX-AMrjhnJH53Dlv7OaOEnKuBE2bTajnx9IY3T04HjcYP4FMWjOlDzoK8MUwKZ3SKhEPOS5Z8H0uL_PLQZ-UyyNzIImW1_HyEmGpHsgulGj7-SpSf-oeU0-m-N_p9tT3vRiT8KePy3_d5Kxmf-Algp3n8OtKr89tsdkyqTV96Grf10QlxSEtaBs4-YEa8FwlMztQAyIP8wE5">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface text-[15px]">Sarah Chen</span>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-container/50 px-1.5 py-0.2 rounded">Reader</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">45 mins ago</span>
+</div>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[16px]">more_horiz</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed mb-3 pl-11">
+        The passage on Tamara where street signs substitute things themselves feels terrifyingly modern. Beautiful reflection.
+      </p>
+<div class="flex items-center justify-between pl-11 text-on-surface-variant">
+<div class="flex items-center gap-space-md">
+<button class="reply-trigger font-label-md text-label-md text-primary font-semibold hover:underline flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">reply</span>
+            Reply
+          </button>
+<button class="helpful-btn font-label-md text-label-md text-on-surface-variant hover:text-secondary flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[14px]">psychology_alt</span>
+<span>Helpful reflection</span>
+<span class="helpful-count font-bold text-secondary ml-0.5">1</span>
+</button>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant/70">Margin #2</span>
+</div>
+</div>
+<!-- Comment 3: Omar Farooq -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-sm transition-all hover:bg-surface-container-high/60">
+<div class="flex items-start justify-between mb-2">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-headline-sm text-headline-sm text-[14px]">
+            OF
+          </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface text-[15px]">Omar Farooq</span>
+<span class="font-label-sm text-label-sm bg-surface-container-highest text-on-surface-variant px-1.5 py-0.2 rounded">Queue #2</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">20 mins ago</span>
+</div>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[16px]">more_horiz</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed mb-3 pl-11">
+        Would love to be next in line to borrow this after Sarah finishes her reading!
+      </p>
+<div class="flex items-center justify-between pl-11 text-on-surface-variant">
+<div class="flex items-center gap-space-md">
+<button class="reply-trigger font-label-md text-label-md text-primary font-semibold hover:underline flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">reply</span>
+            Reply
+          </button>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">schedule</span>
+            Shelf reservation request sent
+          </span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant/70">Margin #3</span>
+</div>
+</div>
+</div>
+<!-- Bottom Floating Context Composer (Positioned above shell's bottom nav) -->
+<div class="fixed bottom-20 left-0 right-0 z-40 px-margin max-w-md mx-auto">
+<div class="bg-surface/95 backdrop-blur-md rounded-2xl p-space-sm shadow-xl flex flex-col gap-2">
+<!-- Active Reply Banner (Hidden by default) -->
+<div class="hidden items-center justify-between px-2 py-1 bg-surface-container rounded-lg text-on-surface-variant" id="replyBanner">
+<span class="font-label-sm text-label-sm flex items-center gap-1 truncate">
+<span class="material-symbols-outlined text-[14px] text-primary">reply</span>
+          Replying to <strong class="text-on-surface" id="replyTarget">Karim Mansour</strong>
+</span>
+<button class="text-on-surface-variant hover:text-on-surface" id="cancelReply" type="button">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</div>
+<div class="flex items-center gap-space-sm">
+<img class="w-8 h-8 rounded-full object-cover flex-shrink-0" data-alt="Small thumbnail avatar of Layla Al-Khatib, warm aesthetic, fine editorial look" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBf5i0HfamUQGou-sCwdzCQVhVCR4ENcctuILfCoAhywPisFAbg3kACw2sBv2dnwkqKerhOQUMhho2Rfx8ATr35GcJmJRP_TQO96OKjvBlq5dFwc90OroLmic9sBsj20PgGH6xABegNqewDqXCp3hfU_dp1sYBjXDJYQkFsdupkozxP7-06LQLlm8t-oNRwuPQOsvXSOPWdPqrvdADJet4Ow2XBxMCCzBAUnS-A6r4Z">
+<div class="flex-1 relative flex items-center">
+<input class="w-full bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm rounded-full py-2.5 pl-4 pr-10 focus:outline-none focus:bg-surface-container-lowest transition-all" id="commentInput" placeholder="Write your reflection or add marginalia..." type="text">
+<button class="absolute right-3 text-on-surface-variant hover:text-primary transition-colors" id="quoteShortcut" title="Insert Page Quote citation" type="button">
+<span class="material-symbols-outlined text-[18px]">format_quote</span>
+</button>
+</div>
+<button aria-label="Send reflection" class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-md active:scale-90 hover:opacity-90 transition-all flex-shrink-0" id="sendCommentBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">north</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    // Bookmark Toggle Interaction
+    const bookmarkBtn = document.getElementById('bookmarkBtn');
+    if (bookmarkBtn) {
+      bookmarkBtn.addEventListener('click', function() {
+        const icon = this.querySelector('.material-symbols-outlined');
+        const isFilled = icon.style.fontVariationSettings && icon.style.fontVariationSettings.includes("'FILL' 1");
+        if (isFilled) {
+          icon.style.fontVariationSettings = "'FILL' 0";
+          this.classList.remove('text-primary');
+        } else {
+          icon.style.fontVariationSettings = "'FILL' 1";
+          this.classList.add('text-primary');
+        }
+      });
+    }
+
+    // Helpful Reflection counter
+    const helpfulBtns = document.querySelectorAll('.helpful-btn');
+    helpfulBtns.forEach(btn => {
+      btn.addEventListener('click', function() {
+        const countSpan = this.querySelector('.helpful-count');
+        const icon = this.querySelector('.material-symbols-outlined');
+        let count = parseInt(countSpan.textContent, 10);
+        if (this.dataset.voted === 'true') {
+          count -= 1;
+          this.dataset.voted = 'false';
+          this.classList.remove('text-secondary');
+          icon.style.fontVariationSettings = "'FILL' 0";
+        } else {
+          count += 1;
+          this.dataset.voted = 'true';
+          this.classList.add('text-secondary');
+          icon.style.fontVariationSettings = "'FILL' 1";
+        }
+        countSpan.textContent = count;
+      });
+    });
+
+    // Reply shortcut interaction
+    const replyTriggers = document.querySelectorAll('.reply-trigger');
+    const replyBanner = document.getElementById('replyBanner');
+    const replyTarget = document.getElementById('replyTarget');
+    const cancelReply = document.getElementById('cancelReply');
+    const commentInput = document.getElementById('commentInput');
+
+    replyTriggers.forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const parentCard = this.closest('.bg-surface-container');
+        const authorName = parentCard.querySelector('.font-headline-sm').innerText;
+        replyTarget.innerText = authorName;
+        replyBanner.classList.remove('hidden');
+        replyBanner.classList.add('flex');
+        commentInput.focus();
+      });
+    });
+
+    if (cancelReply) {
+      cancelReply.addEventListener('click', function() {
+        replyBanner.classList.add('hidden');
+        replyBanner.classList.remove('flex');
+      });
+    }
+
+    // Quote shortcut button adds markdown quotation marks
+    const quoteShortcut = document.getElementById('quoteShortcut');
+    if (quoteShortcut && commentInput) {
+      quoteShortcut.addEventListener('click', function() {
+        const start = commentInput.selectionStart || 0;
+        const end = commentInput.selectionEnd || 0;
+        const current = commentInput.value;
+        commentInput.value = current.substring(0, start) + '“' + current.substring(start, end) + '”' + current.substring(end);
+        commentInput.focus();
+      });
+    }
+
+    // Interactive append of new comment
+    const sendBtn = document.getElementById('sendCommentBtn');
+    if (sendBtn && commentInput) {
+      sendBtn.addEventListener('click', function() {
+        const text = commentInput.value.trim();
+        if (!text) return;
+
+        const feed = document.querySelector('.space-y-space-sm');
+        const newCard = document.createElement('div');
+        newCard.className = 'bg-surface-container rounded-xl p-space-md shadow-sm transition-all animate-fade-in';
+        newCard.innerHTML = `
+          <div class="flex items-start justify-between mb-2">
+            <div class="flex items-center gap-space-sm">
+              <img src="placeholder" data-alt="Avatar of Layla Al-Khatib" class="w-9 h-9 rounded-full object-cover" />
+              <div class="flex flex-col">
+                <div class="flex items-center gap-1.5">
+                  <span class="font-headline-sm text-headline-sm text-on-surface text-[15px]">Layla Al-Khatib</span>
+                  <span class="font-label-sm text-label-sm text-primary bg-primary-fixed px-1.5 py-0.2 rounded">Author</span>
+                </div>
+                <span class="font-label-sm text-label-sm text-on-surface-variant">Just now</span>
+              </div>
+            </div>
+          </div>
+          <p class="font-body-md text-body-md text-on-surface leading-relaxed mb-2 pl-11">${text}</p>
+          <div class="flex items-center justify-between pl-11 text-on-surface-variant font-label-sm text-label-sm">
+            <span class="text-primary font-semibold">Reflection recorded</span>
+            <span>Just now</span>
+          </div>
+        `;
+
+        feed.appendChild(newCard);
+        commentInput.value = '';
+        if (replyBanner) {
+          replyBanner.classList.add('hidden');
+          replyBanner.classList.remove('flex');
+        }
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-semibold"><div class="flex justify-around items-center h-16 px-space-xs max-w-md mx-auto"><a class="flex-1 min-w-[44px] min-h-[44px] flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-on-surface transition-all active:scale-95 group" data-path="home" href="#"><span class="material-symbols-outlined text-[22px] transition-transform group-hover:-translate-y-0.5">auto_stories</span><span class="font-label-sm text-label-sm leading-tight tracking-normal">Home</span></a><a class="flex-1 min-w-[44px] min-h-[44px] flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-on-surface transition-all active:scale-95 group" data-path="discover" href="#"><span class="material-symbols-outlined text-[22px] transition-transform group-hover:-translate-y-0.5">explore</span><span class="font-label-sm text-label-sm leading-tight tracking-normal">Discover</span></a><div class="flex-1 flex items-center justify-center"><a aria-label="Add Book or Thought" class="w-12 h-12 -mt-4 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-[0_4px_14px_rgba(147,60,41,0.3)] hover:bg-primary-container active:scale-95 transition-all" data-path="add-entry" href="#"><span class="material-symbols-outlined text-[24px]">add</span></a></div><a class="flex-1 min-w-[44px] min-h-[44px] flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-on-surface transition-all active:scale-95 group" data-path="reading-corner" href="#"><span class="material-symbols-outlined text-[22px] transition-transform group-hover:-translate-y-0.5">local_library</span><span class="font-label-sm text-label-sm leading-tight tracking-normal text-center">Corner</span></a><a class="flex-1 min-w-[44px] min-h-[44px] flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-on-surface transition-all active:scale-95 group" data-path="profile" href="#"><span class="material-symbols-outlined text-[22px] transition-transform group-hover:-translate-y-0.5">person_book</span><span class="font-label-sm text-label-sm leading-tight tracking-normal">Profile</span></a></div></nav>
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true" style="visibility: visible !important;"></grammarly-desktop-integration></html>

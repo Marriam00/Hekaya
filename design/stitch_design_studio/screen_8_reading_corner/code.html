@@ -1,0 +1,384 @@
+<!DOCTYPE html><html class="h-full" lang="en" data-qb-installed="true"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#fff8f6;color:#211a18;-webkit-tap-highlight-color:transparent;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:calc(env(safe-area-inset-bottom,0px) + 0.5rem);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}*{-ms-overflow-style:none;scrollbar-width:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary-fixed-dim": "#ffb4a4", "primary-fixed": "#ffdad3", "surface-container-high": "#f3e5e2", "secondary-container": "#d1e5cb", "error": "#ba1a1a", "on-surface": "#211a18", "on-background": "#211a18", "surface-tint": "#9c432f", "secondary": "#51634e", "tertiary-fixed-dim": "#f0bd8b", "on-surface-variant": "#56423e", "secondary-fixed-dim": "#b8ccb3", "on-primary-fixed-variant": "#7d2c1a", "background": "#fff8f6", "inverse-primary": "#ffb4a4", "surface-container-low": "#fff1ed", "primary-container": "#b2533e", "surface": "#fff8f6", "on-primary-container": "#fff1ee", "on-error": "#ffffff", "on-tertiary-fixed": "#2c1600", "on-tertiary-fixed-variant": "#623f18", "error-container": "#ffdad6", "on-error-container": "#93000a", "on-tertiary": "#ffffff", "surface-container-highest": "#ede0dc", "tertiary-container": "#91673c", "tertiary": "#754f27", "on-secondary": "#ffffff", "on-primary": "#ffffff", "surface-variant": "#ede0dc", "surface-container-lowest": "#ffffff", "surface-container": "#f9ebe7", "outline": "#89726d", "secondary-fixed": "#d4e8ce", "primary": "#933c29", "on-secondary-fixed": "#0f1f0f", "outline-variant": "#dcc1bb", "surface-dim": "#e4d7d4", "tertiary-fixed": "#ffdcbd", "on-primary-fixed": "#3d0600", "on-secondary-container": "#556752", "on-tertiary-container": "#fff2e9", "inverse-on-surface": "#fceeea", "inverse-surface": "#362f2d", "on-secondary-fixed-variant": "#3a4b38", "surface-bright": "#fff8f6" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xl": "2.25rem", "gutter": "1rem", "margin": "1.25rem", "gutter-compact": "0.75rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-md": "1rem", "margin-expanded": "1.5rem" }, fontFamily: { "title-md": ["Newsreader"], "headline-sm": ["Newsreader"], "headline-lg": ["Newsreader"], "body-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-md": ["Newsreader"], "display-lg-mobile": ["Newsreader"], "body-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "display-lg": ["Newsreader"] }, fontSize: { "title-md": ["16px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "500" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-lg": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "label-sm": ["10px", { "lineHeight": "12px", "letterSpacing": "0.06em", "fontWeight": "700" }], "label-lg": ["13px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-md": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "display-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "500" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style></style></head><body class="min-h-full bg-surface text-on-surface flex flex-col font-body-md text-body-md antialiased selection:bg-primary-fixed selection:text-on-primary-fixed" data-new-gr-c-s-check-loaded="14.1347.0" data-gr-ext-installed="" data-new-gr-c-s-loaded="14.1347.0"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Hekaya App Icon" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDdlsVk8q8gtmTsxqxp8md2PoVKaVJmuoJe-F1h0xVpIAihmQkmchfJm_qxZ8SdZ-5PpgOiS7XjZt_4la__CsHkPmR3ddKHlpxlE7BHsnWjo3D2nQYT9UvmarxTJ-rzxbYN-9X0ouPo2nNAh0WKRBizwsyvmrFbTpAhcAXFoNocPUi29b-l-tNknjkmd7iRu2JUapu6T72gnkQi34GvkSamBvrF13lEKJEAvfJdwRx_sw"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">Hekaya</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider leading-none mt-1">Home</span></div></div><div class="flex items-center gap-space-xs"><button class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span></button><a class="w-11 h-11 flex items-center justify-center p-0.5 rounded-full transition-transform active:scale-95" data-path="profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfZqFH8SPCOFTMH2JW6t1llPI-eYKBWT0oAGFp35aVMM37kmzfNuPrl9v8EoZtpyj51a_kc9XGsspddjDd5y66Up-Ee2Zkmv4NaoqlC2NwKChVH9z7U5cIiFoOF0KeY4682pkzClTu3GoNPsf8BSp0xO0lvmQcig72yyVQ2uvB59ywLhEzTihrepj5CZWsNZQQVqgeYb00_Rz0uHoif8S2m-1i_MH5U_riS8a8uOLp"></a></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-28 bg-surface px-margin"><div class="flex flex-col w-full pb-8 space-y-space-lg">
+<!-- Screen Header & Subtitle -->
+<div class="flex flex-col space-y-space-xs pt-1">
+<div class="flex items-center justify-between">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Reading Corner</h1>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+        18 Online
+      </span>
+</div>
+<div class="flex items-center gap-2">
+
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Archival Society</span>
+</div>
+</div>
+<!-- Filter Pills -->
+<div class="flex items-center gap-space-sm overflow-x-auto pb-1 -mx-margin px-margin">
+<button class="corner-filter-btn flex-shrink-0 px-3.5 py-1.5 rounded-full bg-primary text-on-primary font-label-lg text-label-lg transition-colors active:scale-95" data-filter="all" type="button">
+      All Thoughts
+    </button>
+<button class="corner-filter-btn flex-shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container-highest transition-colors active:scale-95" data-filter="books" type="button">
+      With Linked Books
+    </button>
+<button class="corner-filter-btn flex-shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container-highest transition-colors active:scale-95" data-filter="questions" type="button">
+      Questions
+    </button>
+<button class="corner-filter-btn flex-shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container-highest transition-colors active:scale-95" data-filter="discussions" type="button">
+      Discussions
+    </button>
+</div>
+<!-- Post Composer Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm transition-all">
+<div class="flex items-start gap-space-sm mb-space-sm">
+<img alt="Current User" class="w-9 h-9 rounded-full object-cover flex-shrink-0 bg-surface-container-high" data-alt="Warm studio portrait of an Arab woman scholar with dark curly hair tied back wearing a linen cardigan in a sunlit library room filled with classic books" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJH9HK0d-zRYfft0KBTEKSOdjz9pp6HHayB5s7oJHhYMqsTWFT6rWwpaB3nO9mPKEh_R5fQ0BQ9fjgzichPATZ9xa7EdEW1L5R7viWGdvd-Xm1p3h_2DCycTKGzzqrg0K1YNq0yBVZXsKU6ujWB67A2VJzCV64Yeoh9YVw-Tvf0Z9v6w9zvOACDL2JRts-te1TDy-r_m99r-v6C-8f7D8hzzRxbNtq4cziR4Tt1N-A">
+<div class="flex-1">
+<label class="sr-only" for="thought-input">Share a thought, quote, or question</label>
+<textarea class="w-full bg-surface-container-lowest rounded-lg p-space-sm text-body-md font-body-md text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary transition-all resize-none shadow-sm" id="thought-input" placeholder="Share a reflection, quote, or question with Circle 04..." rows="2"></textarea>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors active:scale-95" id="link-book-btn" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">book</span>
+<span>+ Link a Book</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-sm hover:bg-primary-container active:scale-95 transition-all" id="publish-thought-btn" type="button">
+<span>Publish Thought</span>
+<span class="material-symbols-outlined text-[16px]">send</span>
+</button>
+</div>
+<!-- Hidden linked book selector tray preview for interactivity -->
+<div class="hidden mt-space-sm p-space-xs rounded-lg bg-surface-container flex items-center justify-between" id="linked-book-preview">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">menu_book</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Selected: Invisible Cities by Italo Calvino</span>
+</div>
+<button class="text-outline hover:text-error" id="remove-link-btn" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+</div>
+<!-- Feed Section -->
+<div class="flex flex-col space-y-space-md">
+<!-- Post 1: Layla Al-Khatib -->
+<article class="bg-surface-container-low rounded-xl p-space-md shadow-sm transition-all">
+<!-- Author Header -->
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-sm">
+<img alt="Layla Al-Khatib" class="w-10 h-10 rounded-full object-cover flex-shrink-0 bg-surface-container-high" data-alt="Refined close-up portrait of Layla, a 30-year-old literary critic wearing tortoise-shell reading glasses and an amber scarf in an archival reading room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGgMv6fMfWq7wze46obCTX9F_Ww5XO4OPI4GOOJ2NMxOtkR03NtWqLpfl3PpdBxWWQIx6fv6n-RoqjibxQ-xMJKcOUtxdWgmQfn_ZxbMevRCmZUqnP44PNGwj33U4JMmKmqrfmHQwLSCC47kQc1i20YheZalS81j6R9L8b0iWSxbbXhVTrlONIkrOAin0g5LJSurJPJXsNFnIjeYgjptQ0biqzEMg6Ie9yzaeg_cyb">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface">Layla Al-Khatib</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wide">Member</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">2 hours ago • Marginalia</span>
+</div>
+</div>
+<button aria-label="Post actions" class="text-outline hover:text-on-surface transition-colors p-1" type="button">
+<span class="material-symbols-outlined text-[20px]">more_horiz</span>
+</button>
+</div>
+<!-- Post Body -->
+<div class="space-y-space-sm mb-space-md">
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+          Revisiting Calvino’s <span class="italic font-title-md text-title-md">Invisible Cities</span> tonight. There is a line that struck me with renewed force:
+        </p>
+<blockquote class="pl-3 py-1 my-2 bg-surface-container-lowest/60 rounded-r-lg">
+<p class="font-title-md text-title-md text-on-surface-variant italic leading-relaxed">
+            “With cities, it is as with dreams: everything imaginable can be dreamed, but even the most unexpected dream is a rebus that conceals a desire...”
+          </p>
+</blockquote>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+          How many of us read a book once for the story, and the second time for the city it builds in our thoughts?
+        </p>
+</div>
+<!-- Linked Book Card -->
+<div class="mb-space-md bg-surface-container-lowest rounded-lg p-space-sm shadow-sm flex items-center justify-between gap-space-sm transition-transform hover:-translate-y-0.5">
+<div class="flex items-center gap-3 min-w-0">
+<div class="relative w-11 h-16 flex-shrink-0 rounded bg-surface-container-high overflow-hidden shadow-sm">
+<img alt="Invisible Cities book cover" class="w-full h-full object-cover" data-alt="Cover of Invisible Cities by Italo Calvino, graphic vintage Italian book cover with minimalist surreal terracotta arches and towers on warm textured parchment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5NIHnDBT2ADIgY-Cf8JTrg6K8iQ4VhypC8qpnB0nuHZvi8Bn8r_HEzwI9_Ei9JA0Kq9yIXsMdknQKVr9X72KioE4sG6Ex-IngUrIRIwsCPkglGHwClXesKy1wacPod4JcscR2M79yMv-Z1bleJ0_7Dq6cPYe70WEpvOTS4oiIXvWhu4r_qtFv0eGSEt9l1y1zrk343daDEEMcdb4mJTGzfkzgTfXIMiZPc_RAz3Fs">
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 mb-0.5">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">In My Library</span>
+<span class="text-outline-variant font-label-sm text-label-sm">•</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Public</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Invisible Cities</span>
+<span class="font-body-sm text-body-sm text-outline truncate">Italo Calvino (1972)</span>
+</div>
+</div>
+<a class="flex-shrink-0 inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary font-label-md text-label-md transition-colors" data-path="book-detail" href="#">
+<span>View</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+<!-- Interaction Bar -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap- space-x-1">
+<button aria-label="Bookmark this reflection" class="post-like-btn inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-on-surface-variant hover:text-primary transition-colors active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark</span>
+<span class="font-label-md text-label-md like-count">24</span>
+</button>
+<button aria-label="View 7 reflections" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-on-surface-variant hover:text-primary transition-colors active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px]">forum</span>
+<span class="font-label-md text-label-md">7 Reflections</span>
+</button>
+</div>
+<button class="inline-flex items-center gap-1 px-3.5 py-1.5 rounded-full bg-surface-container text-primary font-label-lg text-label-lg hover:bg-primary hover:text-on-primary transition-all active:scale-95" type="button">
+<span class="material-symbols-outlined text-[16px]">chat_bubble_outline</span>
+<span>Discuss</span>
+</button>
+</div>
+</article>
+<!-- Post 2: Karim Mansour (Lending/Circulation) -->
+<article class="bg-surface-container-low rounded-xl p-space-md shadow-sm transition-all">
+<!-- Author Header -->
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-sm">
+<img alt="Karim Mansour" class="w-10 h-10 rounded-full object-cover flex-shrink-0 bg-surface-container-high" data-alt="Distinguished mature middle eastern man Karim with silver-streaked beard and tweed waistcoat in a warm antiquarian bookstore reading a vintage leatherbound tome" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLKMl4X1aVAYvajYeDunXxMdzLIbfiZVzgufkuTCintP_SFEWaRW-xy9nDW2N2JQxaz3DhdYlzT37HMEjYKybrqkV866oOCrUGMjWLdM8QZ6Awo-BMY6hJAGuXdXj1yMsiuutn3juqE8EFiDV53gFVLgVuEdXShsoQfq2_C8Zv8bokYCgudNNyPhnerN0YeVWZbrvl7mzYSFORofFpTZr3aeF3Uhfnk-aNoXgPrO9w">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface">Karim Mansour</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm uppercase tracking-wide">&nbsp;Curator</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">5 hours ago • Lending Shelf</span>
+</div>
+</div>
+<button aria-label="Post actions" class="text-outline hover:text-on-surface transition-colors p-1" type="button">
+<span class="material-symbols-outlined text-[20px]">more_horiz</span>
+</button>
+</div>
+<!-- Post Body -->
+<div class="space-y-space-sm mb-space-md">
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+          Just put my 1st edition copy of <span class="italic font-title-md text-title-md">The Master and Margarita</span> into circulation. Beware chapter 28—the stitching is delicate, but the satire is sharper than ever. Anyone looking to borrow, my door and shelf are open!
+        </p>
+</div>
+<!-- Linked Book Card (Circulation Badge) -->
+<div class="mb-space-md bg-surface-container-lowest rounded-lg p-space-sm shadow-sm flex items-center justify-between gap-space-sm transition-transform hover:-translate-y-0.5">
+<div class="flex items-center gap-3 min-w-0">
+<div class="relative w-11 h-16 flex-shrink-0 rounded bg-surface-container-high overflow-hidden shadow-sm">
+<img alt="The Master and Margarita book cover" class="w-full h-full object-cover" data-alt="Cover of The Master and Margarita by Mikhail Bulgakov, vintage dark red Soviet edition with embossed black silhouette of a feline and moonlight over Moscow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAw_ElpSOsYg5BPk09ldumZaubJG9_3JAjs5JGz06o4bHCeifZyhOA3quEYJ4iB5Hj35xZMMLY6pIhQLr06zYDaxR_9vkIXoXlP7f8_uJ7pFp0AK_DHjWyPxMxbmnO6Q0pRb3IRQRSVGy3X2aZv2C1fKr8_tDnmujpJgXKt09ILKrOHpPNdv_CZjz4KMv_qlGYPsKAwZO99CTT7NquqU1IFx1fDm8dh326godqFaiSS">
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 mb-0.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Available to Borrow
+              </span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">The Master and Margarita</span>
+<span class="font-body-sm text-body-sm text-outline truncate">Mikhail Bulgakov • Rare Hardcover</span>
+</div>
+</div>
+<button class="request-borrow-btn flex-shrink-0 inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-sm hover:bg-primary-container active:scale-95 transition-all" type="button">
+<span>Request</span>
+</button>
+</div>
+<!-- Interaction Bar -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-1">
+<button aria-label="Save this offer" class="post-like-btn inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-on-surface-variant hover:text-primary transition-colors active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark</span>
+<span class="font-label-md text-label-md like-count">19</span>
+</button>
+<button aria-label="View comments" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-on-surface-variant hover:text-primary transition-colors active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span class="font-label-md text-label-md">12 Comments</span>
+</button>
+</div>
+<div class="flex items-center gap-1.5">
+<div class="flex -space-x-1.5 overflow-hidden">
+<span class="inline-block w-5 h-5 rounded-full bg-primary-fixed text-on-primary-fixed text-[9px] font-bold text-center leading-5 shadow-sm">LC</span>
+<span class="inline-block w-5 h-5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed text-[9px] font-bold text-center leading-5 shadow-sm">MK</span>
+<span class="inline-block w-5 h-5 rounded-full bg-secondary-fixed text-on-secondary-fixed text-[9px] font-bold text-center leading-5 shadow-sm">YA</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">4 interested</span>
+</div>
+</div>
+</article>
+<!-- Post 3: Sarah Chen (Question Prompt) -->
+<article class="bg-surface-container-low rounded-xl p-space-md shadow-sm transition-all">
+<!-- Author Header -->
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-sm">
+<img alt="Sarah Chen" class="w-10 h-10 rounded-full object-cover flex-shrink-0 bg-surface-container-high" data-alt="Portrait of Sarah Chen, an Asian scholar with minimalist round glasses sitting beside a stack of comparative literature journals in soft afternoon amber light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCk5Mfejv9A5PKBFuFs0g-aVipuLz3ryvSRjHmH_YPnG1QcauRjbFkCBxR0yQbaPGtJQaqZb3Gs7W_vy7_F4pbbBN2yDMeAeoSfQNCWWfpNyLm0GaR6udGF1P9OQ6snwvbeK3VpP4cN-NQbAYE3EVEI8609JMy9DeMjywiEu3_7ThsJPy8AgNopYELQ_TObUVG_aY_UafEeRLaUiYftLKEoOya0EYyQ2Jw1M0SRFuUg">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface">Sarah Chen</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wide">Member</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">Yesterday • Literary Inquiry</span>
+</div>
+</div>
+<button aria-label="Post actions" class="text-outline hover:text-on-surface transition-colors p-1" type="button">
+<span class="material-symbols-outlined text-[20px]">more_horiz</span>
+</button>
+</div>
+<!-- Post Body -->
+<div class="space-y-space-sm mb-space-sm">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">help_outline</span>
+<span>Open Inquiry</span>
+</div>
+<p class="font-title-md text-title-md text-on-surface leading-relaxed">
+          Question for the salon: which Borges translation do you consider the most faithful to his philosophical cadence? Norman Thomas di Giovanni or Andrew Hurley?
+        </p>
+</div>
+<!-- Quick Poll/Answers Preview Box -->
+<div class="my-space-sm p-space-sm bg-surface-container-lowest rounded-lg space-y-2">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface font-medium">Norman Thomas di Giovanni (collaborative cadence)</span>
+<span class="text-primary font-semibold">68%</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 68%;"></div>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm pt-1">
+<span class="text-on-surface font-medium">Andrew Hurley (literal precision)</span>
+<span class="text-outline font-semibold">32%</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 32%;"></div>
+</div>
+</div>
+<!-- Interaction Bar -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-1">
+<button aria-label="Bookmark question" class="post-like-btn inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-on-surface-variant hover:text-primary transition-colors active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark</span>
+<span class="font-label-md text-label-md like-count">31</span>
+</button>
+<button aria-label="9 comments preview" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-on-surface-variant hover:text-primary transition-colors active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px]">forum</span>
+<span class="font-label-md text-label-md">9 Comments</span>
+</button>
+</div>
+<button class="inline-flex items-center gap-1 px-3.5 py-1.5 rounded-full bg-surface-container text-primary font-label-lg text-label-lg hover:bg-primary hover:text-on-primary transition-all active:scale-95" type="button">
+<span class="material-symbols-outlined text-[16px]">reply</span>
+<span>Weigh In</span>
+</button>
+</div>
+</article>
+</div>
+<!-- Ambient Micro-Action: Floating Salon Pen -->
+<div class="fixed bottom-20 right-4 z-40">
+<button aria-label="Compose new salon discussion" class="flex items-center gap-2 pl-3.5 pr-4 py-2.5 rounded-full bg-primary text-on-primary shadow-lg hover:bg-primary-container active:scale-95 transition-all" id="fab-new-discussion" type="button">
+<span class="material-symbols-outlined text-[20px]">edit_note</span>
+<span class="font-label-lg text-label-lg font-semibold tracking-wide">New Topic</span>
+</button>
+</div>
+</div>
+<script>
+  // Simple client-side micro-interactions for delightful prototype response
+  (function() {
+    // 1. Filter pill toggles
+    const filterBtns = document.querySelectorAll('.corner-filter-btn');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => {
+          b.classList.remove('bg-primary', 'text-on-primary');
+          b.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+        });
+        btn.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+        btn.classList.add('bg-primary', 'text-on-primary');
+      });
+    });
+
+    // 2. Link a book mock toggle
+    const linkBtn = document.getElementById('link-book-btn');
+    const previewBox = document.getElementById('linked-book-preview');
+    const removeLinkBtn = document.getElementById('remove-link-btn');
+
+    if (linkBtn && previewBox && removeLinkBtn) {
+      linkBtn.addEventListener('click', () => {
+        previewBox.classList.remove('hidden');
+      });
+      removeLinkBtn.addEventListener('click', () => {
+        previewBox.classList.add('hidden');
+      });
+    }
+
+    // 3. Publishing reflection prompt
+    const publishBtn = document.getElementById('publish-thought-btn');
+    const inputArea = document.getElementById('thought-input');
+    if (publishBtn && inputArea) {
+      publishBtn.addEventListener('click', () => {
+        if (!inputArea.value.trim()) {
+          inputArea.focus();
+          inputArea.classList.add('ring-2', 'ring-primary');
+          setTimeout(() => inputArea.classList.remove('ring-2', 'ring-primary'), 1000);
+          return;
+        }
+        publishBtn.innerHTML = '<span class="material-symbols-outlined text-[16px] animate-spin">refresh</span><span>Sharing...</span>';
+        setTimeout(() => {
+          inputArea.value = '';
+          if (previewBox) previewBox.classList.add('hidden');
+          publishBtn.innerHTML = '<span>Published!</span><span class="material-symbols-outlined text-[16px]">check</span>';
+          setTimeout(() => {
+            publishBtn.innerHTML = '<span>Publish Thought</span><span class="material-symbols-outlined text-[16px]">send</span>';
+          }, 1500);
+        }, 600);
+      });
+    }
+
+    // 4. Like / Bookmark toggles
+    const likeButtons = document.querySelectorAll('.post-like-btn');
+    likeButtons.forEach(btn => {
+      btn.addEventListener('click', function() {
+        const icon = this.querySelector('.material-symbols-outlined');
+        const countSpan = this.querySelector('.like-count');
+        const isFilled = icon.style.fontVariationSettings && icon.style.fontVariationSettings.includes("'FILL' 1");
+        
+        let count = parseInt(countSpan.textContent, 10);
+        if (isFilled) {
+          icon.style.fontVariationSettings = "'FILL' 0";
+          this.classList.remove('text-primary');
+          this.classList.add('text-on-surface-variant');
+          countSpan.textContent = count - 1;
+        } else {
+          icon.style.fontVariationSettings = "'FILL' 1";
+          this.classList.add('text-primary');
+          this.classList.remove('text-on-surface-variant');
+          countSpan.textContent = count + 1;
+        }
+      });
+    });
+
+    // 5. Borrow button interaction
+    const borrowBtns = document.querySelectorAll('.request-borrow-btn');
+    borrowBtns.forEach(btn => {
+      btn.addEventListener('click', function() {
+        this.innerHTML = '<span>Requested</span>';
+        this.classList.remove('bg-primary', 'hover:bg-primary-container');
+        this.classList.add('bg-secondary', 'text-on-secondary');
+      });
+    });
+
+    // 6. FAB scroll to composer
+    const fabBtn = document.getElementById('fab-new-discussion');
+    if (fabBtn && inputArea) {
+      fabBtn.addEventListener('click', () => {
+        inputArea.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        inputArea.focus();
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-semibold"><div class="flex justify-around items-center h-16 px-space-xs max-w-md mx-auto"><a class="flex-1 min-w-[44px] min-h-[44px] flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-on-surface transition-all active:scale-95 group" data-path="home" href="#"><span class="material-symbols-outlined text-[22px] transition-transform group-hover:-translate-y-0.5">auto_stories</span><span class="font-label-sm text-label-sm leading-tight tracking-normal">Home</span></a><a class="flex-1 min-w-[44px] min-h-[44px] flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-on-surface transition-all active:scale-95 group" data-path="discover" href="#"><span class="material-symbols-outlined text-[22px] transition-transform group-hover:-translate-y-0.5">explore</span><span class="font-label-sm text-label-sm leading-tight tracking-normal">Discover</span></a><div class="flex-1 flex items-center justify-center"><a aria-label="Add Book or Thought" class="w-12 h-12 -mt-4 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-[0_4px_14px_rgba(147,60,41,0.3)] hover:bg-primary-container active:scale-95 transition-all" data-path="add-entry" href="#"><span class="material-symbols-outlined text-[24px]">add</span></a></div><a class="flex-1 min-w-[44px] min-h-[44px] flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-on-surface transition-all active:scale-95 group" data-path="reading-corner" href="#"><span class="material-symbols-outlined text-[22px] transition-transform group-hover:-translate-y-0.5">local_library</span><span class="font-label-sm text-label-sm leading-tight tracking-normal text-center">Corner</span></a><a class="flex-1 min-w-[44px] min-h-[44px] flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-on-surface transition-all active:scale-95 group" data-path="profile" href="#"><span class="material-symbols-outlined text-[22px] transition-transform group-hover:-translate-y-0.5">person_book</span><span class="font-label-sm text-label-sm leading-tight tracking-normal">Profile</span></a></div></nav>
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true" style="visibility: visible !important;"></grammarly-desktop-integration></html>

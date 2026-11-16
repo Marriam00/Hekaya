@@ -1,0 +1,383 @@
+<!DOCTYPE html><html class="h-full" lang="en" data-qb-installed="true"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#fff8f6;color:#211a18;-webkit-tap-highlight-color:transparent;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:calc(env(safe-area-inset-bottom,0px) + 0.5rem);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}*{-ms-overflow-style:none;scrollbar-width:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary-fixed-dim": "#ffb4a4", "primary-fixed": "#ffdad3", "surface-container-high": "#f3e5e2", "secondary-container": "#d1e5cb", "error": "#ba1a1a", "on-surface": "#211a18", "on-background": "#211a18", "surface-tint": "#9c432f", "secondary": "#51634e", "tertiary-fixed-dim": "#f0bd8b", "on-surface-variant": "#56423e", "secondary-fixed-dim": "#b8ccb3", "on-primary-fixed-variant": "#7d2c1a", "background": "#fff8f6", "inverse-primary": "#ffb4a4", "surface-container-low": "#fff1ed", "primary-container": "#b2533e", "surface": "#fff8f6", "on-primary-container": "#fff1ee", "on-error": "#ffffff", "on-tertiary-fixed": "#2c1600", "on-tertiary-fixed-variant": "#623f18", "error-container": "#ffdad6", "on-error-container": "#93000a", "on-tertiary": "#ffffff", "surface-container-highest": "#ede0dc", "tertiary-container": "#91673c", "tertiary": "#754f27", "on-secondary": "#ffffff", "on-primary": "#ffffff", "surface-variant": "#ede0dc", "surface-container-lowest": "#ffffff", "surface-container": "#f9ebe7", "outline": "#89726d", "secondary-fixed": "#d4e8ce", "primary": "#933c29", "on-secondary-fixed": "#0f1f0f", "outline-variant": "#dcc1bb", "surface-dim": "#e4d7d4", "tertiary-fixed": "#ffdcbd", "on-primary-fixed": "#3d0600", "on-secondary-container": "#556752", "on-tertiary-container": "#fff2e9", "inverse-on-surface": "#fceeea", "inverse-surface": "#362f2d", "on-secondary-fixed-variant": "#3a4b38", "surface-bright": "#fff8f6" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xl": "2.25rem", "gutter": "1rem", "margin": "1.25rem", "gutter-compact": "0.75rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-md": "1rem", "margin-expanded": "1.5rem" }, fontFamily: { "title-md": ["Newsreader"], "headline-sm": ["Newsreader"], "headline-lg": ["Newsreader"], "body-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-md": ["Newsreader"], "display-lg-mobile": ["Newsreader"], "body-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "display-lg": ["Newsreader"] }, fontSize: { "title-md": ["16px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "500" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-lg": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "label-sm": ["10px", { "lineHeight": "12px", "letterSpacing": "0.06em", "fontWeight": "700" }], "label-lg": ["13px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-md": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "display-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "500" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style></style></head><body class="min-h-full bg-surface text-on-surface flex flex-col font-body-md text-body-md antialiased selection:bg-primary-fixed selection:text-on-primary-fixed" data-new-gr-c-s-check-loaded="14.1347.0" data-gr-ext-installed="" data-new-gr-c-s-loaded="14.1347.0"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Hekaya App Icon" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDdlsVk8q8gtmTsxqxp8md2PoVKaVJmuoJe-F1h0xVpIAihmQkmchfJm_qxZ8SdZ-5PpgOiS7XjZt_4la__CsHkPmR3ddKHlpxlE7BHsnWjo3D2nQYT9UvmarxTJ-rzxbYN-9X0ouPo2nNAh0WKRBizwsyvmrFbTpAhcAXFoNocPUi29b-l-tNknjkmd7iRu2JUapu6T72gnkQi34GvkSamBvrF13lEKJEAvfJdwRx_sw"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">Hekaya</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider leading-none mt-1">Home</span></div></div><div class="flex items-center gap-space-xs"><button class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span></button><a class="w-11 h-11 flex items-center justify-center p-0.5 rounded-full transition-transform active:scale-95" data-path="profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfZqFH8SPCOFTMH2JW6t1llPI-eYKBWT0oAGFp35aVMM37kmzfNuPrl9v8EoZtpyj51a_kc9XGsspddjDd5y66Up-Ee2Zkmv4NaoqlC2NwKChVH9z7U5cIiFoOF0KeY4682pkzClTu3GoNPsf8BSp0xO0lvmQcig72yyVQ2uvB59ywLhEzTihrepj5CZWsNZQQVqgeYb00_Rz0uHoif8S2m-1i_MH5U_riS8a8uOLp"></a></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-28 bg-surface px-margin"><div class="flex flex-col w-full">
+<!-- Screen Header & Context -->
+<section class="flex flex-col gap-space-xs mb-space-lg">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary" style="font-variation-settings: &quot;FILL&quot; 1;">sync_alt</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">Private Circulation</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Borrowing &amp; Loans</h1>
+
+<!-- Summary Count Badges -->
+<div class="flex items-center gap-space-xs overflow-x-auto py-space-xs -mx-margin px-margin">
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary-container text-on-primary-container shadow-sm shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-on-primary-container animate-pulse"></span>
+<span class="font-label-md text-label-md">1 Incoming</span>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant shrink-0">
+<span class="font-label-md text-label-md">1 Sent</span>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant shrink-0">
+<span class="font-label-md text-label-md">1 Borrowed</span>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-secondary-container text-on-secondary-container shrink-0">
+<span class="font-label-md text-label-md">2 Lent Out</span>
+</div>
+</div>
+</section>
+<!-- Segmented Tabs Navigation -->
+
+<!-- TAB PANELS WRAPPER -->
+<div class="flex flex-col gap-space-lg">
+<!-- PANEL 1: INCOMING REQUESTS -->
+<div class="tab-panel flex flex-col gap-space-md" id="panel-incoming">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-primary">inbox</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Incoming Requests</h2>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">Action Needed</span>
+</div>
+<!-- Book Lending Card -->
+<article class="bg-surface-container rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<!-- Book Details Header -->
+<div class="flex gap-space-md items-start">
+<div class="relative w-16 h-24 shrink-0 rounded-lg overflow-hidden bg-surface-container-highest shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Vintage hardcover book Kafka on the Shore by Haruki Murakami resting on a sunlit antique walnut study desk with fine paper texture and warm ambient tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuArvaynL9_2uwl4uSTUspWNrJ8Thll9zUJnjDnelayMe3256uTAjvNlqQ5yWJRwImP8-LXp4xO0MYuIYkhUFK2HkcI8gWOwWzJPL2g7ov98hR0DPEER-ySgDyGqyK-kJf4QoxMLPBRbjToIgzKo7EP06IsyfWvWkn_isTiojS6YS10t3e_elnjD6Z0vji5UtANhEPOh-ub9jTyub52x1GEbEISYnNjS81B65uY4DzcK">
+<div class="absolute inset-y-0 left-0 w-1 bg-black/10"></div>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">Your Volume</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Kafka on the Shore</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Haruki Murakami • 1st Edition Hardcover</p>
+<div class="mt-2 flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span class="font-label-sm text-label-sm">Requested 2 hours ago</span>
+</div>
+</div>
+</div>
+<!-- Requester Profile & Quote -->
+<div class="bg-surface rounded-lg p-space-sm flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<img class="w-7 h-7 rounded-full object-cover" data-alt="Portrait of Omar Farooq, a scholarly reader wearing tortoiseshell glasses with a warm smile in an archive library." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcHOwX907eLqGqy1tshtAYdl876PLAynuGsZDXO5kKSjGahgqEzMwoev_Gls2itAR8Xxnhk8pCmow-FxzkJdvssdKYUqR8zc2PM7jUcYp8-y85kwzBiLp5FTb5VYIvSY8goDSdJWq4fsus79bUUH-IjU-YtQHzqtn8wxmzkzlA3gCPVz2Qv0X5UxPbK6NHvpS11SCw0dOdZFJCx9S7060gxusvzPFT5BTuP4G8c-lf">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface leading-tight">Omar Farooq</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Queue #1 • Alexandria Circle</span>
+</div>
+</div>
+
+</div>
+<div class="relative pl-3 mt-1">
+<div class="absolute left-0 top-0 bottom-0 w-0.5 bg-primary/40 rounded-full"></div>
+<p class="font-title-md text-title-md italic text-on-surface leading-snug">
+              “Would love to read this ahead of next month's magical realism salon discussion! Can pick up this Friday.”
+            </p>
+</div>
+</div>
+<!-- Custody Notice -->
+<div class="flex items-start gap-2 text-on-surface-variant px-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary mt-0.5 shrink-0">info</span>
+<p class="font-body-sm text-body-sm leading-tight text-on-surface-variant">
+            Accepting will mark volume unavailable to others and open a handover chat.
+          </p>
+</div>
+<!-- Action CTAs -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<button class="h-11 rounded-full bg-surface-container-highest text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-dim active:scale-95 transition-all text-center flex items-center justify-center" onclick="handleDecline(this)" type="button">
+            Decline
+          </button>
+<button class="h-11 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-sm hover:bg-primary-container active:scale-95 transition-all text-center flex items-center justify-center gap-1.5" onclick="handleAccept(this)" type="button">
+<span class="material-symbols-outlined text-[18px]">handshake</span>
+            Accept &amp; Lend
+          </button>
+</div>
+</article>
+</div>
+<!-- PANEL 2: SENT REQUESTS -->
+<div class="tab-panel hidden flex-col gap-space-md" id="panel-sent">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-tertiary">outgoing_mail</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Sent Requests</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">1 Request Awaiting Response</span>
+</div>
+<!-- Sent Card -->
+<article class="bg-surface-container rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex gap-space-md items-start">
+<div class="relative w-16 h-24 shrink-0 rounded-lg overflow-hidden bg-surface-container-highest shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Cover of The Master and Margarita by Mikhail Bulgakov featuring stylized vintage Russian modernist illustration on aged parchment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJIRrc44YCMuQRBWpI3Wv0ehlDYasVQb3SQecBaAlx59aG_RZKqEq1sI1vxn5NYxTX8nkZR9K0ksCl-YLjTr4MxlwZfz4Hu1cPBIGNV-m7q-ZwxDpxDJExTt7RaNgyZiSjvEGjGkjQHFNYTYE2TOzpqFrzKrU4q-zDaCrN_zMQO3dU4XYU4Arti5zqh3yTVBQGob6RZ_WfUE55vNX47K2nrX0n0ek4_yf4dRmPxMIl">
+<div class="absolute inset-y-0 left-0 w-1 bg-black/10"></div>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Awaiting Host</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">Pending</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">The Master and Margarita</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Mikhail Bulgakov • Owned by Karim Mansour</p>
+<div class="mt-2 flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px]">send</span>
+<span class="font-label-sm text-label-sm">Sent yesterday at 4:15 PM</span>
+</div>
+</div>
+</div>
+<!-- Note Sent -->
+<div class="bg-surface rounded-lg p-space-sm flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Your Message to Karim</span>
+<p class="font-title-md text-title-md italic text-on-surface">
+            “Hoping to inspect chapter 28 annotations. Can meet at Old Town Coffeehouse.”
+          </p>
+</div>
+<!-- Status Details -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Karim was active 45m ago</span>
+</div>
+<button class="px-4 py-1.5 rounded-full bg-surface-container-highest text-on-surface-variant hover:text-error hover:bg-error-container font-label-md text-label-md active:scale-95 transition-all" onclick="cancelSentRequest(this)" type="button">
+            Cancel Request
+          </button>
+</div>
+</article>
+</div>
+<!-- PANEL 3: BORROWED -->
+<div class="tab-panel hidden flex-col gap-space-md" id="panel-borrowed">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-primary">local_library</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Currently Borrowed</h2>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">In Your Custody</span>
+</div>
+<!-- Borrowed Book Card -->
+<article class="bg-surface-container rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<!-- Return Countdown Banner -->
+<div class="bg-primary-container text-on-primary-container rounded-lg px-space-md py-2.5 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">hourglass_top</span>
+<span class="font-label-lg text-label-lg">Due in 6 days</span>
+</div>
+<span class="font-label-sm text-label-sm opacity-90">Oct 24, 2024</span>
+</div>
+<div class="flex gap-space-md items-start">
+<div class="relative w-16 h-24 shrink-0 rounded-lg overflow-hidden bg-surface-container-highest shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Cover of Invisible Cities by Italo Calvino, minimal geometric architectural linework printed on thick rag paper." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcUk2KYkXgq_FURrfe2c1L3ewPMQDUTjp6KafzeQAAh_BVr46wEySgjC8JDqvNW1HUlWplvVc-bDDt4QQ1lvilEPo_RvMmSInm7iWVA2eJOHqgZ1sAMn2hCORWqbmFCVI3OPHVw489673xSjIAl_rlcyC5RZlhppAwfp8WcuhDB4q_tYG_xtu6ORCpgln5TAUyJsZhGh_zPpmfv3AimF-pKX-o_l7LvvRB46QRMLUD">
+<div class="absolute inset-y-0 left-0 w-1 bg-black/10"></div>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Keeper Copy</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Invisible Cities</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Italo Calvino</p>
+<div class="mt-2 flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px]">person</span>
+<span class="font-label-sm text-label-sm">Owner: Karim Mansour</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Borrowed on Oct 10, 2024</span>
+</div>
+</div>
+<!-- Annotation reminder badge -->
+<div class="bg-surface rounded-lg p-space-sm flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-tertiary">edit_note</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Karim requested pencil margin notes only on this 1974 edition.
+          </p>
+</div>
+<!-- Action CTAs -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<button class="h-11 rounded-full bg-surface-container-highest text-on-surface font-label-lg text-label-lg hover:bg-surface-dim active:scale-95 transition-all text-center flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">chat_bubble</span>
+            Message Karim
+          </button>
+<button class="h-11 rounded-full bg-surface text-primary font-label-lg text-label-lg shadow-sm hover:bg-surface-container-high active:scale-95 transition-all text-center flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+            View Folio
+          </button>
+</div>
+</article>
+</div>
+<!-- PANEL 4: LENT OUT -->
+<div class="tab-panel hidden flex-col gap-space-md" id="panel-lent">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-secondary">output_circle</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Lent to Members</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2 Books in Circle</span>
+</div>
+<!-- Volume 1: Ficciones -->
+<article class="bg-surface-container rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-start justify-between">
+<div class="flex gap-space-md items-start flex-1 min-w-0">
+<div class="relative w-16 h-24 shrink-0 rounded-lg overflow-hidden bg-surface-container-highest shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Vintage textured clothbound book cover of Ficciones by Jorge Luis Borges on an ivory wooden shelf." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmu6quQXNkQh8mctnCekjp5BJ-2jXOn82kq3FrdzNst5w0ZJZMH6vcC_w30mNeUiU85way0sHdps4zbTfJ5qUV6fOLk1Qwp_J6AZJkGNvnNGETTb_SRfINUGe2lNiMdpQ00GhDQh0adsMfxC-wQ9lowJy2w-qyZPydvv2xLQzruuSvIXWrPcZNViLdt5nXdSjSByiFX_zSpDEHmD7luVxNFj20-WX7Xfker-X6k3kN">
+<div class="absolute inset-y-0 left-0 w-1 bg-black/10"></div>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">In Circulation</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Ficciones</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Jorge Luis Borges</p>
+<div class="mt-2 flex items-center gap-2">
+<img class="w-5 h-5 rounded-full object-cover" data-alt="Portrait of Sarah Chen, literary reader with relaxed smile and linen scarf." src="https://lh3.googleusercontent.com/aida-public/AB6AXuARnOm-u-BTJLteLdESWa4HF8TIHo5v0vYDGDtd0bbSixEVcsvz_O2KHtoQO47Gkj3WalgGV0wDVaJNqP1YFWZsr7TxItyjzWUOIoAYlS8baJmXJnNODq9zJ24coqhWnKW1izvpmiN3nCgim4QOiZtoEXwxTthc4Z7EyIeVWJDHJUinHPs8JkRMYv2CiAfl3iOl1qhyBm6BsR93GICFak7tAhJVrnYF5t98nVilUOjO">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold truncate">With Sarah Chen</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface rounded-lg p-space-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Return Schedule</span>
+<span class="font-label-lg text-label-lg text-primary font-semibold">Due Oct 22 (in 4 days)</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Lent 12 days ago</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<button class="h-10 rounded-full bg-surface-container-highest text-on-surface font-label-md text-label-md hover:bg-surface-dim active:scale-95 transition-all text-center flex items-center justify-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">notifications_active</span>
+            Ping Sarah
+          </button>
+<button class="h-10 rounded-full bg-surface text-primary font-label-md text-label-md shadow-sm hover:bg-surface-container-high active:scale-95 transition-all text-center flex items-center justify-center gap-1" onclick="confirmReturn(this, 'Ficciones')" type="button">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+            Confirm Return
+          </button>
+</div>
+</article>
+<!-- Volume 2: The Shadow of the Wind -->
+<article class="bg-surface-container rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-start justify-between">
+<div class="flex gap-space-md items-start flex-1 min-w-0">
+<div class="relative w-16 h-24 shrink-0 rounded-lg overflow-hidden bg-surface-container-highest shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Atmospheric cover of The Shadow of the Wind by Carlos Ruiz Zafon showing misty gothic streets of Barcelona." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhxRfJHudCJp4rKRBffAT3yU4ntZoGoTJNdyw8y3y9vF3fZ-nLH68vsIpqSleKMTir9qYAjB0q20ad4JDWJiPcwOVGY1B0Qg9J0Tfr6qjWDcBY9RwPcDOJkSnbJos3YfXTc-AuCATg4whdmjQNzNF4huyat2uvoatM7PLKnkJnh_5q3T-BFNtaSDO-Yu_8_98LTzCkZJ2xSJoiY3e66XjYQC7wbaJyIQQPl1A5DIQP">
+<div class="absolute inset-y-0 left-0 w-1 bg-black/10"></div>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Active Circulation</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">The Shadow of the Wind</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Carlos Ruiz Zafón</p>
+<div class="mt-2 flex items-center gap-2">
+<img class="w-5 h-5 rounded-full object-cover" data-alt="Portrait of Julian Vance holding a leather book journal in an archival study." src="https://lh3.googleusercontent.com/aida-public/AB6AXuClynb2fK4TJDwNEH_9MIyFYkTR4gD-fOfR2RWEZ8ztOAGn9Yi0fCCO4xMg6dcYIeYqfP2A2MxaRjhH4wfcQ1tP3Nmn9F412i6-RNYarX-WiOTJLzS-4Eka85JVbS42RxnN__LOMJBzEDFeRPVEbqZ35yWjySjnxpia8gOs_5yZ6tGO7EHMqqe3xVAfd7nkDDNb77VyJfrMKwHEY_BreNbluYD_obtO2szxX-cXuXF9">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold truncate">With Julian Vance</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface rounded-lg p-space-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Return Schedule</span>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Due Nov 2 (in 15 days)</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">On Track</span>
+</div>
+<div class="flex">
+<button class="w-full h-10 rounded-full bg-surface text-primary font-label-md text-label-md shadow-sm hover:bg-surface-container-high active:scale-95 transition-all text-center flex items-center justify-center gap-1" onclick="confirmReturn(this, 'The Shadow of the Wind')" type="button">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+            Confirm Physical Return
+          </button>
+</div>
+</article>
+</div>
+</div>
+<!-- Archival & Etiquette Banner -->
+<section class="mt-space-xl bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-xs shadow-sm">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[20px]">auto_stories</span>
+<h4 class="font-headline-sm text-headline-sm">Borrowing Protocol</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+      Physical loans are based on trust and respect for annotations and bindings. Return books in the condition received. When returning, ensure personal bookmarks or notes remain intact for the next custodian.
+    </p>
+<div class="pt-2 flex items-center justify-between">
+
+<a class="font-label-sm text-label-sm text-primary underline underline-offset-4 hover:opacity-80" href="#">Full Code of Trust</a>
+</div>
+</section>
+<!-- Interactive Toast Notification -->
+<div class="fixed bottom-20 left-4 right-4 bg-inverse-surface text-inverse-on-surface px-space-md py-3 rounded-xl shadow-lg flex items-center justify-between gap-3 transform translate-y-24 opacity-0 pointer-events-none transition-all duration-300 z-50" id="action-toast">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[20px]" id="toast-icon">check_circle</span>
+<span class="font-body-sm text-body-sm truncate" id="toast-message">Request updated successfully.</span>
+</div>
+<button class="text-inverse-on-surface/70 hover:text-inverse-on-surface text-sm font-semibold shrink-0" onclick="dismissToast()" type="button">Dismiss</button>
+</div>
+</div>
+<script>
+  function switchLoanTab(tabKey) {
+    const tabs = ['incoming', 'sent', 'borrowed', 'lent'];
+    tabs.forEach(key => {
+      const btn = document.getElementById('tab-' + key);
+      const panel = document.getElementById('panel-' + key);
+      if (key === tabKey) {
+        btn.classList.add('bg-surface', 'text-primary', 'shadow-sm');
+        btn.classList.remove('text-on-surface-variant');
+        panel.classList.remove('hidden');
+        panel.classList.add('flex');
+      } else {
+        btn.classList.remove('bg-surface', 'text-primary', 'shadow-sm');
+        btn.classList.add('text-on-surface-variant');
+        panel.classList.add('hidden');
+        panel.classList.remove('flex');
+      }
+    });
+  }
+
+  function showToast(msg, icon = 'check_circle') {
+    const toast = document.getElementById('action-toast');
+    const msgEl = document.getElementById('toast-message');
+    const iconEl = document.getElementById('toast-icon');
+    if (!toast) return;
+    msgEl.textContent = msg;
+    iconEl.textContent = icon;
+    toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+    toast.classList.add('translate-y-0', 'opacity-100');
+    setTimeout(() => dismissToast(), 3500);
+  }
+
+  function dismissToast() {
+    const toast = document.getElementById('action-toast');
+    if (!toast) return;
+    toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+    toast.classList.remove('translate-y-0', 'opacity-100');
+  }
+
+  function handleAccept(btn) {
+    btn.disabled = true;
+    btn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span> Processing...';
+    setTimeout(() => {
+      btn.innerHTML = '<span class="material-symbols-outlined text-[18px]">done</span> Accepted!';
+      btn.classList.remove('bg-primary');
+      btn.classList.add('bg-secondary', 'text-on-secondary');
+      showToast('Kafka on the Shore loan approved! Handover chat initiated with Omar.');
+    }, 600);
+  }
+
+  function handleDecline(btn) {
+    btn.disabled = true;
+    btn.textContent = 'Declined';
+    btn.classList.add('opacity-50');
+    showToast('Request politely declined.', 'info');
+  }
+
+  function cancelSentRequest(btn) {
+    btn.disabled = true;
+    btn.textContent = 'Cancelled';
+    btn.classList.add('opacity-50');
+    showToast('Your borrow request for The Master and Margarita was cancelled.', 'delete');
+  }
+
+  function confirmReturn(btn, title) {
+    btn.disabled = true;
+    btn.innerHTML = '<span class="material-symbols-outlined text-[16px]">task_alt</span> Volume Restored';
+    btn.classList.remove('text-primary');
+    btn.classList.add('bg-secondary-container', 'text-on-secondary-container');
+    showToast(`${title} confirmed returned and marked available in catalog!`);
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-semibold"><div class="flex justify-around items-center h-16 px-space-xs max-w-md mx-auto"><a class="flex-1 min-w-[44px] min-h-[44px] flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-on-surface transition-all active:scale-95 group" data-path="home" href="#"><span class="material-symbols-outlined text-[22px] transition-transform group-hover:-translate-y-0.5">auto_stories</span><span class="font-label-sm text-label-sm leading-tight tracking-normal">Home</span></a><a class="flex-1 min-w-[44px] min-h-[44px] flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-on-surface transition-all active:scale-95 group" data-path="discover" href="#"><span class="material-symbols-outlined text-[22px] transition-transform group-hover:-translate-y-0.5">explore</span><span class="font-label-sm text-label-sm leading-tight tracking-normal">Discover</span></a><div class="flex-1 flex items-center justify-center"><a aria-label="Add Book or Thought" class="w-12 h-12 -mt-4 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-[0_4px_14px_rgba(147,60,41,0.3)] hover:bg-primary-container active:scale-95 transition-all" data-path="add-entry" href="#"><span class="material-symbols-outlined text-[24px]">add</span></a></div><a class="flex-1 min-w-[44px] min-h-[44px] flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-on-surface transition-all active:scale-95 group" data-path="reading-corner" href="#"><span class="material-symbols-outlined text-[22px] transition-transform group-hover:-translate-y-0.5">local_library</span><span class="font-label-sm text-label-sm leading-tight tracking-normal text-center">Corner</span></a><a class="flex-1 min-w-[44px] min-h-[44px] flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-on-surface transition-all active:scale-95 group" data-path="profile" href="#"><span class="material-symbols-outlined text-[22px] transition-transform group-hover:-translate-y-0.5">person_book</span><span class="font-label-sm text-label-sm leading-tight tracking-normal">Profile</span></a></div></nav>
+
+<grammarly-desktop-integration data-grammarly-shadow-root="true" style="visibility: visible !important;"></grammarly-desktop-integration><grammarly-desktop-integration data-grammarly-shadow-root="true" style="visibility: visible !important;"></grammarly-desktop-integration></body><grammarly-desktop-integration data-grammarly-shadow-root="true" style="visibility: visible !important;"></grammarly-desktop-integration></html>
