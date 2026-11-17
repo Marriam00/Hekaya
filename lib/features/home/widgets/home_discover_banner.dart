@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_tokens.dart';
 
-class DiscoverCircleBooksBanner extends StatelessWidget {
-  const DiscoverCircleBooksBanner({
+class HomeDiscoverBanner extends StatelessWidget {
+  const HomeDiscoverBanner({
     super.key,
     required this.titleCount,
     required this.onTap,
@@ -25,13 +25,9 @@ class DiscoverCircleBooksBanner extends StatelessWidget {
           padding: const EdgeInsets.all(AppSpacing.gutter),
           child: Row(
             children: [
-              Container(
-                width: AppSpacing.controlHeight,
-                height: AppSpacing.controlHeight,
-                decoration: const BoxDecoration(
-                  color: AppColors.primaryFixed,
-                  shape: BoxShape.circle,
-                ),
+              CircleAvatar(
+                radius: AppSpacing.brandMarkSize / 2,
+                backgroundColor: AppColors.primaryFixed,
                 child: const Icon(
                   Icons.explore_outlined,
                   color: AppColors.primary,
@@ -44,31 +40,21 @@ class DiscoverCircleBooksBanner extends StatelessWidget {
                   children: [
                     Text(
                       'Discover Circle Books',
-                      maxLines: 2,
-                      overflow: TextOverflow.ellipsis,
-                      style: Theme.of(context).textTheme.headlineSmall,
+                      style: Theme.of(context).textTheme.titleMedium,
                     ),
                     Text(
-                      'Explore $titleCount titles circulating across your private salon',
-                      maxLines: 3,
+                      'Explore $titleCount titles circulating across your circle',
+                      maxLines: 2,
                       overflow: TextOverflow.ellipsis,
-                      style: Theme.of(context).textTheme.bodySmall
-                          ?.copyWith(color: AppColors.onSurfaceVariant),
+                      style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                        color: AppColors.onSurfaceVariant,
+                      ),
                     ),
                   ],
                 ),
               ),
               const SizedBox(width: AppSpacing.spaceSm),
-              IconButton(
-                tooltip: 'Discover Circle Books',
-                onPressed: onTap,
-                style: IconButton.styleFrom(
-                  backgroundColor: AppColors.surfaceHigh,
-                  foregroundColor: AppColors.onSurface,
-                  shape: const CircleBorder(),
-                ),
-                icon: const Icon(Icons.chevron_right),
-              ),
+              const Icon(Icons.chevron_right_rounded),
             ],
           ),
         ),

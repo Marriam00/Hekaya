@@ -9,11 +9,25 @@ class AppFilterChip extends StatelessWidget {
     required this.label,
     required this.selected,
     required this.onSelected,
+    this.selectedColor,
+    this.selectedForegroundColor,
+    this.borderRadius,
+    this.labelStyle,
+    this.backgroundColor,
+    this.unselectedForegroundColor,
+    this.paddedTapTarget = false,
   });
 
   final String label;
   final bool selected;
   final ValueChanged<bool> onSelected;
+  final Color? selectedColor;
+  final Color? selectedForegroundColor;
+  final BorderRadius? borderRadius;
+  final TextStyle? labelStyle;
+  final Color? backgroundColor;
+  final Color? unselectedForegroundColor;
+  final bool paddedTapTarget;
 
   @override
   Widget build(BuildContext context) {
@@ -22,18 +36,27 @@ class AppFilterChip extends StatelessWidget {
       selected: selected,
       onSelected: onSelected,
       showCheckmark: false,
-      materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-      visualDensity: VisualDensity.compact,
+      materialTapTargetSize: paddedTapTarget
+          ? MaterialTapTargetSize.padded
+          : MaterialTapTargetSize.shrinkWrap,
+      visualDensity: paddedTapTarget
+          ? VisualDensity.standard
+          : VisualDensity.compact,
       padding: const EdgeInsets.symmetric(
         horizontal: AppSpacing.gutterCompact,
         vertical: AppSpacing.spaceXs,
       ),
-      labelStyle: Theme.of(context).textTheme.labelMedium?.copyWith(
-        color: selected ? AppColors.onPrimary : AppColors.onSurfaceVariant,
-      ),
-      backgroundColor: AppColors.surfaceContainer,
-      selectedColor: AppColors.primary,
-      shape: const StadiumBorder(),
+      labelStyle: (labelStyle ?? Theme.of(context).textTheme.labelMedium)
+          ?.copyWith(
+            color: selected
+                ? (selectedForegroundColor ?? AppColors.onPrimary)
+                : (unselectedForegroundColor ?? AppColors.onSurfaceVariant),
+          ),
+      backgroundColor: backgroundColor ?? AppColors.surfaceContainer,
+      selectedColor: selectedColor ?? AppColors.primary,
+      shape: borderRadius == null
+          ? const StadiumBorder()
+          : RoundedRectangleBorder(borderRadius: borderRadius!),
       side: BorderSide.none,
     );
   }

@@ -1,11 +1,17 @@
 import 'package:flutter/material.dart';
 
-import '../features/shared/widgets/app_bottom_navigation_bar.dart';
-import '../core/theme/app_colors.dart';
-import '../features/shared/placeholder_page.dart';
+import '../features/add_edit_book/add_edit_book_screen.dart';
+import '../features/book_details/book_details_screen.dart';
+import '../features/borrowing_lending/borrowing_lending_screen.dart';
+import '../features/discover/discover_screen.dart';
 import '../features/home/home_screen.dart';
+import '../features/library/my_library_screen.dart';
+import '../features/post_details/post_details_screen.dart';
+import '../features/profile/member_profile_screen.dart';
+import '../features/profile_settings/profile_settings_screen.dart';
+import '../features/reading_corner/reading_corner_screen.dart';
+import '../features/shared/widgets/app_bottom_navigation_bar.dart';
 
-/// The main frame of the app: the page on top, the bottom bar below.
 class AppShell extends StatefulWidget {
   const AppShell({super.key});
 
@@ -14,33 +20,128 @@ class AppShell extends StatefulWidget {
 }
 
 class _AppShellState extends State<AppShell> {
-  int _index = 0; // 0 Home, 1 Discover, 2 Corner, 3 Profile
+  int _index = 0;
 
-  // Replace these placeholders with the real screens in later phases.
-  static const _pages = <Widget>[
-    HomeScreen(),
-    PlaceholderPage(title: 'Discover', subtitle: 'Discover goes here'),
-    PlaceholderPage(
-      title: 'Reading Corner',
-      subtitle: 'Reading Corner goes here',
+  late final _pages = <Widget>[
+    HomeScreen(
+      onViewLibrary: _openLibrary,
+      onBookDetails: _openBookDetails,
+      onBorrowingLending: _openBorrowingLending,
+      onPostDetails: _openPostDetails,
+      onDiscover: () => setState(() => _index = 1),
+      onOpenProfile: _openProfileSettings,
     ),
-    PlaceholderPage(title: 'Profile', subtitle: 'Profile goes here'),
+    DiscoverScreen(onOpenProfile: _openProfileSettings),
+    ReadingCornerScreen(
+      onOpenThread: _openPostDetails,
+      onOpenBook: _openBookDetails,
+      onOpenProfile: _openProfileSettings,
+    ),
+    MemberProfileScreen(
+      onOpenSettings: _openProfileSettings,
+      onOpenBook: _openBookDetails,
+      onOpenPost: _openPostDetails,
+    ),
   ];
 
-  void _openAddBook() {
+  void _openAddBook({String? bookId}) {
     Navigator.of(context).push(
       MaterialPageRoute<void>(
-        builder: (_) => Scaffold(
-          appBar: AppBar(
-            backgroundColor: AppColors.surface,
-            surfaceTintColor: Colors.transparent,
+        builder: (routeContext) => Scaffold(
+          body: AddEditBookScreen(
+            bookId: bookId,
+            onSaved: () => Navigator.of(routeContext).pop(),
           ),
-          body: const PlaceholderPage(
-            title: 'Add Book',
-            subtitle: 'Add / Edit Book goes here',
-          ),
+          bottomNavigationBar: _routeNavigation(routeContext),
         ),
       ),
+    );
+  }
+
+  void _openBookDetails(String bookId) {
+    Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (routeContext) => Scaffold(
+          body: BookDetailsScreen(
+            bookId: bookId,
+            onBack: () => Navigator.of(routeContext).pop(),
+            onEditBook: (id) => _openAddBook(bookId: id),
+            onOpenProfile: _openProfileSettings,
+          ),
+          bottomNavigationBar: _routeNavigation(routeContext),
+        ),
+      ),
+    );
+  }
+
+  void _openBorrowingLending() {
+    Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (routeContext) => Scaffold(
+          body: BorrowingLendingScreen(onOpenProfile: _openProfileSettings),
+          bottomNavigationBar: _routeNavigation(routeContext),
+        ),
+      ),
+    );
+  }
+
+  void _openProfileSettings() {
+    Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (routeContext) => Scaffold(
+          body: ProfileSettingsScreen(
+            onOpenLibrary: _openLibrary,
+            onOpenBorrowing: _openBorrowingLending,
+          ),
+          bottomNavigationBar: _routeNavigation(routeContext),
+        ),
+      ),
+    );
+  }
+
+  void _openPostDetails(String postId) {
+    Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (routeContext) => Scaffold(
+          body: PostDetailsScreen(
+            postId: postId,
+            onBack: () => Navigator.of(routeContext).pop(),
+            onOpenProfile: _openProfileSettings,
+            onOpenBook: _openBookDetails,
+          ),
+          bottomNavigationBar: _routeNavigation(routeContext),
+        ),
+      ),
+    );
+  }
+
+  void _openLibrary() {
+    Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (routeContext) => Scaffold(
+          body: MyLibraryScreen(
+            onAddBook: () => _openAddBook(),
+            onOpenBook: _openBookDetails,
+            onEditBook: (id) => _openAddBook(bookId: id),
+            onOpenProfile: _openProfileSettings,
+          ),
+          bottomNavigationBar: _routeNavigation(routeContext),
+        ),
+      ),
+    );
+  }
+
+  Widget _routeNavigation(BuildContext routeContext) {
+    return AppBottomNavigationBar(
+      selectedIndex: _index,
+      onSelected: (index) {
+        Navigator.of(routeContext).popUntil((route) => route.isFirst);
+        setState(() => _index = index);
+      },
+      onAdd: () {
+        Navigator.of(routeContext).popUntil((route) => route.isFirst);
+        _openAddBook();
+      },
     );
   }
 

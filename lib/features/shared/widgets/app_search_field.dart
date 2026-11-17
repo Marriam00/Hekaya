@@ -11,8 +11,14 @@ class AppSearchField extends StatelessWidget {
     this.onChanged,
     this.onSubmitted,
     this.onFilterPressed,
+    this.suffixIcon,
+    this.suffixTooltip,
+    this.onSuffixPressed,
     this.readOnly = false,
     this.onTap,
+    this.borderRadius,
+    this.fillColor,
+    this.hasBorder = true,
   });
 
   final String hintText;
@@ -20,8 +26,14 @@ class AppSearchField extends StatelessWidget {
   final ValueChanged<String>? onChanged;
   final ValueChanged<String>? onSubmitted;
   final VoidCallback? onFilterPressed;
+  final IconData? suffixIcon;
+  final String? suffixTooltip;
+  final VoidCallback? onSuffixPressed;
   final bool readOnly;
   final VoidCallback? onTap;
+  final BorderRadius? borderRadius;
+  final Color? fillColor;
+  final bool hasBorder;
 
   @override
   Widget build(BuildContext context) {
@@ -45,22 +57,22 @@ class AppSearchField extends StatelessWidget {
             minWidth: 48,
             minHeight: 48,
           ),
-          suffixIcon: onFilterPressed == null
+          suffixIcon: onSuffixPressed == null && onFilterPressed == null
               ? null
               : IconButton(
-                  tooltip: 'Filter',
-                  onPressed: onFilterPressed,
-                  icon: const Icon(Icons.tune_rounded),
+                  tooltip: suffixTooltip ?? 'Filter',
+                  onPressed: onSuffixPressed ?? onFilterPressed,
+                  icon: Icon(suffixIcon ?? Icons.tune_rounded),
                   color: AppColors.onSurfaceVariant,
                 ),
           filled: true,
-          fillColor: AppColors.surfaceLowest,
+          fillColor: fillColor ?? AppColors.surfaceLowest,
           contentPadding: const EdgeInsets.symmetric(
             horizontal: AppSpacing.gutter,
           ),
-          border: _border,
-          enabledBorder: _border,
-          focusedBorder: _border.copyWith(
+          border: _borderWithRadius,
+          enabledBorder: _borderWithRadius,
+          focusedBorder: _borderWithRadius.copyWith(
             borderSide: const BorderSide(color: AppColors.primaryContainer),
           ),
         ),
@@ -68,8 +80,10 @@ class AppSearchField extends StatelessWidget {
     );
   }
 
-  static final _border = OutlineInputBorder(
-    borderRadius: BorderRadius.circular(AppRadii.pill),
-    borderSide: const BorderSide(color: AppColors.outlineVariant),
+  OutlineInputBorder get _borderWithRadius => OutlineInputBorder(
+    borderRadius: borderRadius ?? BorderRadius.circular(AppRadii.pill),
+    borderSide: hasBorder
+        ? const BorderSide(color: AppColors.outlineVariant)
+        : BorderSide.none,
   );
 }

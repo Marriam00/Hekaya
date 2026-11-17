@@ -9,16 +9,18 @@ class AppHeader extends StatelessWidget {
   const AppHeader({
     super.key,
     this.sectionLabel = 'Home',
+    this.showBrand = true,
+    this.brandImageUrl,
     this.profileName = 'Reader',
     this.profileImageUrl,
-    this.onNotificationsTap,
     this.onProfileTap,
   });
 
   final String sectionLabel;
+  final bool showBrand;
+  final String? brandImageUrl;
   final String profileName;
   final String? profileImageUrl;
-  final VoidCallback? onNotificationsTap;
   final VoidCallback? onProfileTap;
 
   @override
@@ -41,70 +43,87 @@ class AppHeader extends StatelessWidget {
           ),
           child: Row(
             children: [
-              DecoratedBox(
-                decoration: const BoxDecoration(
-                  color: AppColors.primaryFixed,
-                  shape: BoxShape.circle,
-                ),
-                child: const SizedBox(
-                  width: 36,
-                  height: 36,
-                  child: Icon(
-                    Icons.menu_book_rounded,
-                    color: AppColors.primary,
-                    size: 21,
+              if (showBrand) ...[
+                DecoratedBox(
+                  decoration: BoxDecoration(
+                    color: AppColors.primaryFixed,
+                    borderRadius: BorderRadius.circular(AppRadii.small),
+                  ),
+                  child: SizedBox(
+                    width: AppSpacing.brandMarkSize,
+                    height: AppSpacing.brandMarkSize,
+                    child: Stack(
+                      fit: StackFit.expand,
+                      children: [
+                        const Icon(
+                          Icons.menu_book_rounded,
+                          color: AppColors.primary,
+                          size: 20,
+                        ),
+                        if (brandImageUrl != null && brandImageUrl!.isNotEmpty)
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(AppRadii.small),
+                            child: Image.network(
+                              brandImageUrl!,
+                              fit: BoxFit.cover,
+                              errorBuilder: (context, error, stackTrace) =>
+                                  const SizedBox(),
+                            ),
+                          ),
+                      ],
+                    ),
                   ),
                 ),
-              ),
-              const SizedBox(width: AppSpacing.spaceSm),
-              Expanded(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Hekaya',
-                      style: AppTypography.textTheme.headlineSmall?.copyWith(
-                        fontSize: 18,
-                        height: 1,
+                const SizedBox(width: AppSpacing.spaceSm),
+                Expanded(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Hekaya',
+                        style: AppTypography.textTheme.headlineSmall?.copyWith(
+                          fontSize: 18,
+                          height: 1,
+                        ),
                       ),
-                    ),
-                    const SizedBox(height: 3),
-                    Text(
-                      sectionLabel.toUpperCase(),
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                      style: AppTypography.textTheme.labelSmall?.copyWith(
-                        color: AppColors.onSurfaceVariant,
+                      const SizedBox(height: 3),
+                      Text(
+                        sectionLabel.toUpperCase(),
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: AppTypography.textTheme.labelSmall?.copyWith(
+                          color: AppColors.onSurfaceVariant,
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
-              ),
-              IconButton(
-                tooltip: 'Notifications',
-                onPressed: onNotificationsTap,
-                icon: const Icon(Icons.notifications_none_rounded),
-                color: AppColors.onSurfaceVariant,
-                constraints: const BoxConstraints.tightFor(
-                  width: 44,
-                  height: 44,
+              ] else
+                Expanded(
+                  child: Text(
+                    sectionLabel,
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                    style: AppTypography.textTheme.headlineMedium,
+                  ),
                 ),
-              ),
-              const SizedBox(width: AppSpacing.spaceXs),
-              IconButton(
-                tooltip: 'Profile',
-                onPressed: onProfileTap,
-                icon: MemberAvatar(
-                  name: profileName,
-                  imageUrl: profileImageUrl,
-                  size: 32,
+              if (showBrand && onProfileTap != null) ...[
+                const SizedBox(width: AppSpacing.spaceXs),
+                IconButton(
+                  tooltip: 'Profile',
+                  onPressed: onProfileTap,
+                  icon: MemberAvatar(
+                    name: profileName,
+                    imageUrl: profileImageUrl,
+                    size: 32,
+                  ),
+                  constraints: const BoxConstraints.tightFor(
+                    width: 44,
+                    height: 44,
+                  ),
                 ),
-                constraints: const BoxConstraints.tightFor(
-                  width: 44,
-                  height: 44,
-                ),
-              ),
+              ],
             ],
           ),
         ),

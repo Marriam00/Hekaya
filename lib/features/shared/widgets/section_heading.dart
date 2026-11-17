@@ -8,28 +8,43 @@ class SectionHeading extends StatelessWidget {
     super.key,
     required this.title,
     this.leadingIcon,
+    this.leadingColor = AppColors.primary,
     this.actionLabel,
     this.actionIcon,
     this.onAction,
+    this.trailingLabel,
   });
 
   final String title;
   final IconData? leadingIcon;
+  final Color leadingColor;
   final String? actionLabel;
   final IconData? actionIcon;
   final VoidCallback? onAction;
+  final String? trailingLabel;
 
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
         if (leadingIcon != null) ...[
-          Icon(leadingIcon, color: AppColors.primary, size: 20),
+          Icon(leadingIcon, color: leadingColor, size: 20),
           const SizedBox(width: AppSpacing.spaceSm),
         ],
         Expanded(
           child: Text(title, style: Theme.of(context).textTheme.headlineSmall),
         ),
+        if (trailingLabel != null)
+          Flexible(
+            child: Text(
+              trailingLabel!,
+              maxLines: 2,
+              textAlign: TextAlign.end,
+              overflow: TextOverflow.ellipsis,
+              style: Theme.of(context).textTheme.labelSmall
+                  ?.copyWith(color: AppColors.onSurfaceVariant),
+            ),
+          ),
         if (actionLabel != null)
           if (actionIcon == null)
             TextButton(
