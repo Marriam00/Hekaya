@@ -4,6 +4,7 @@ import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_tokens.dart';
 import '../../data/models.dart';
 import '../../data/repositories/repository_scope.dart';
+import '../auth/widgets/settings_sign_out_button.dart';
 import '../shared/widgets/app_filter_chip.dart';
 import '../shared/widgets/app_header.dart';
 import '../shared/widgets/member_avatar.dart';
@@ -157,6 +158,8 @@ class ProfileSettingsScreen extends StatelessWidget {
                       ),
                     ),
                   ),
+                  const SizedBox(height: AppSpacing.spaceXl),
+                  const SettingsSignOutButton(),
                 ],
               ),
             ),
